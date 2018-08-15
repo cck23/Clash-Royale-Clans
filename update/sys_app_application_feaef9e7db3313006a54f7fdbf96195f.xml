@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Clan Members</name>
+        <order>100</order>
+        <roles>x_53373_royalapi.clan_members_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>chikwong.cheung</sys_created_by>
+        <sys_created_on>2018-08-14 14:32:36</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>feaef9e7db3313006a54f7fdbf96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Clan Members</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
+        <sys_update_name>sys_app_application_feaef9e7db3313006a54f7fdbf96195f</sys_update_name>
+        <sys_updated_by>chikwong.cheung</sys_updated_by>
+        <sys_updated_on>2018-08-14 14:32:36</sys_updated_on>
+        <title>Clan Members</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

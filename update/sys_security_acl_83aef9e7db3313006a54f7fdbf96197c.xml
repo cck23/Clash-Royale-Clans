@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_53373_royalapi_clan_members</description>
+        <name>x_53373_royalapi_clan_members</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>chikwong.cheung</sys_created_by>
+        <sys_created_on>2018-08-14 14:32:37</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>83aef9e7db3313006a54f7fdbf96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_53373_royalapi_clan_members</sys_name>
+        <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
+        <sys_update_name>sys_security_acl_83aef9e7db3313006a54f7fdbf96197c</sys_update_name>
+        <sys_updated_by>chikwong.cheung</sys_updated_by>
+        <sys_updated_on>2018-08-14 14:32:37</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>
