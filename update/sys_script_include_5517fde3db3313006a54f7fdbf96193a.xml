@@ -118,11 +118,31 @@ royaleAPIClanExtract.prototype = {
 						clanWarLogGr.clan_war_date = clanWarDate ;
 						clanWarLogGr.insert();
 					}
-					
-					
 				}
-				
-				//gs.debug('participants = ' + thisParticipants.length);
+				// Get clan standings
+				var thisStandings = thisJson.standings;
+				for ( var k = 0 ; k < thisStandings.length ; k++){
+					var competingClan = thisStandings[k];
+					if ( competingClan.tag == 'V2GCC8Y'){
+						gs.debug(clanWarDate.getDisplayValue() + 'V2GCC8Y came ' + (k+1) + "/5" + "new trophy count = " + thisStandings[k].warTrophies + " = change of " + thisStandings[k].warTrophiesChange);
+						// Add the record to the [x_53373_royalapi_clan_war_trophies] table
+						// V2GCC8Y
+						var clanWarTrophies = new GlideRecord('x_53373_royalapi_clan_war_trophies');
+						clanWarTrophies.addQuery('clan_war_date',clanWarDate);
+						clanWarTrophies.addQuery('clan_tag','V2GCC8Y');
+						clanWarTrophies.query();
+						if ( ! clanWarTrophies.next() ){
+							var addClanWarTrophiesGr = new GlideRecord('x_53373_royalapi_clan_war_trophies');
+							addClanWarTrophiesGr.clan_war_date = clanWarDate;
+							addClanWarTrophiesGr.clan_tag = 'V2GCC8Y';
+							addClanWarTrophiesGr.position = (k+1);
+							addClanWarTrophiesGr.trophies = thisStandings[k].warTrophies;
+							addClanWarTrophiesGr.trophy_change = thisStandings[k].warTrophiesChange;
+							addClanWarTrophiesGr.insert();
+						}
+						break;
+					}
+				}
 			}
 		}
 		catch(ex) {
@@ -137,7 +157,7 @@ royaleAPIClanExtract.prototype = {
         <sys_created_on>2018-08-14 14:00:10</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5517fde3db3313006a54f7fdbf96193a</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_name>royaleAPIClanExtract</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy>read</sys_policy>
@@ -145,6 +165,6 @@ royaleAPIClanExtract.prototype = {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_script_include_5517fde3db3313006a54f7fdbf96193a</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-08-15 08:03:54</sys_updated_on>
+        <sys_updated_on>2018-08-16 14:23:54</sys_updated_on>
     </sys_script_include>
 </record_update>
