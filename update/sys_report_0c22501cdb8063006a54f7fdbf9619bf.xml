@@ -24,12 +24,15 @@
         <column>clan_tag</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
+        <created_by_user display_value="Chi-Kwong Cheung">82f33ab1db2322006a54f7fdbf96194f</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <decimal_precision>2</decimal_precision>
         <description/>
         <direction>minimize</direction>
+        <display_column_lines>false</display_column_lines>
         <display_grid>true</display_grid>
+        <display_row_lines>false</display_row_lines>
         <donut_width_percent>50</donut_width_percent>
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
@@ -40,6 +43,7 @@
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
         <group/>
+        <import_table/>
         <interval>date</interval>
         <is_published>false</is_published>
         <is_scheduled>false</is_scheduled>
@@ -59,6 +63,7 @@
         <other_threshold>-2</other_threshold>
         <others>false</others>
         <page_hdrftr display_value="Default">0ecdb03fc3613000cef73b251eba8f5e</page_hdrftr>
+        <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
         <roles/>

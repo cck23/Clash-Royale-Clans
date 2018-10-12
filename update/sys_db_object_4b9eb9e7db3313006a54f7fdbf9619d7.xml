@@ -18,7 +18,9 @@
         <provider_class/>
         <read_access>true</read_access>
         <super_class/>
+        <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
+        <sys_class_path/>
         <sys_created_by>chikwong.cheung</sys_created_by>
         <sys_created_on>2018-08-14 14:32:36</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
