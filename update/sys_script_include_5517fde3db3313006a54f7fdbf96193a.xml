@@ -14,7 +14,6 @@ royaleAPIClanExtract.prototype = {
 	},
 	
 	get: function(){
-		gs.info("SI:royaleAPIClanExtract: start");
 		try {
 			var r = new sn_ws.RESTMessageV2('x_53373_royalapi.RoyalAPI', 'Default GET');
 			
@@ -25,11 +24,6 @@ royaleAPIClanExtract.prototype = {
 			
 			var weekBeginning = new GlideDateTime();
 			weekBeginning.setValue(gdt.getValue().split(' ')[0] +  " 00:00:00");
-			
-			//gs.info('DisplayValue = ' + weekBeginning.getDisplayValue());
-			// gs.info('INternal Value = ' + weekBeginning.getValue() );
-			
-			
 			
 			var response = r.execute();
 			var responseBody = response.getBody();
@@ -79,8 +73,6 @@ royaleAPIClanExtract.prototype = {
 			gs.debug(ex.message);
 			gs.info("CCK: error = " + ex.message);
 		}
-		//gs.info("CCK: test");
-		//gs.info("CCK: length = " + this.currentMembers.length + ", members = " + this.currentMembers);
 		
 	},
 	
@@ -136,9 +128,6 @@ royaleAPIClanExtract.prototype = {
 				for ( var k = 0 ; k < thisStandings.length ; k++){
 					var competingClan = thisStandings[k];
 					if ( competingClan.tag == 'V2GCC8Y'){
-						//gs.debug(clanWarDate.getDisplayValue() + 'V2GCC8Y came ' + (k+1) + "/5" + "new trophy count = " + thisStandings[k].warTrophies + " = change of " + thisStandings[k].warTrophiesChange);
-						// Add the record to the [x_53373_royalapi_clan_war_trophies] table
-						// V2GCC8Y
 						var clanWarTrophies = new GlideRecord('x_53373_royalapi_clan_war_trophies');
 						clanWarTrophies.addQuery('clan_war_date',clanWarDate);
 						clanWarTrophies.addQuery('clan_tag','V2GCC8Y');
@@ -166,11 +155,6 @@ royaleAPIClanExtract.prototype = {
 		var memberGR = new GlideRecord('x_53373_royalapi_clan_members');
 		memberGR.addEncodedQuery(this.currentMembers.join("^"));
 		memberGR.query();
-		/*
-		while ( memberGR.next()){
-			gs.debug('will delete ' + memberGR.name);
-		}
-		*/
 		memberGR.deleteMultiple();
 	},
 	
@@ -182,7 +166,7 @@ royaleAPIClanExtract.prototype = {
         <sys_created_on>2018-08-14 14:00:10</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5517fde3db3313006a54f7fdbf96193a</sys_id>
-        <sys_mod_count>83</sys_mod_count>
+        <sys_mod_count>84</sys_mod_count>
         <sys_name>royaleAPIClanExtract</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy>read</sys_policy>
@@ -190,6 +174,6 @@ royaleAPIClanExtract.prototype = {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_script_include_5517fde3db3313006a54f7fdbf96193a</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-16 09:18:33</sys_updated_on>
+        <sys_updated_on>2018-10-16 12:03:02</sys_updated_on>
     </sys_script_include>
 </record_update>

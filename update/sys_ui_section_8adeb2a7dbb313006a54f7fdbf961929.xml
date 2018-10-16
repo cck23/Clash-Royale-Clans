@@ -141,6 +141,34 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>win_rate</element>
+            <position>10</position>
+            <sys_created_by>chikwong.cheung</sys_created_by>
+            <sys_created_on>2018-10-16 12:07:00</sys_created_on>
+            <sys_id>4489f9f3db0967006a54f7fdbf9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_war_result" sys_domain="global" view="Default view">8adeb2a7dbb313006a54f7fdbf961929</sys_ui_section>
+            <sys_updated_by>chikwong.cheung</sys_updated_by>
+            <sys_updated_on>2018-10-16 12:07:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recent_clan_war_activity</element>
+            <position>11</position>
+            <sys_created_by>chikwong.cheung</sys_created_by>
+            <sys_created_on>2018-10-16 12:07:00</sys_created_on>
+            <sys_id>c889f9f3db0967006a54f7fdbf9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_war_result" sys_domain="global" view="Default view">8adeb2a7dbb313006a54f7fdbf961929</sys_ui_section>
+            <sys_updated_by>chikwong.cheung</sys_updated_by>
+            <sys_updated_on>2018-10-16 12:07:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
