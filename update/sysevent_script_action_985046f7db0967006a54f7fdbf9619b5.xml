@@ -7,7 +7,83 @@
         <event_name>x_53373_royalapi.battle.results</event_name>
         <name>Get Battle Results</name>
         <order>100</order>
-        <script><![CDATA[gs.info("CCK:ScriptAction:Get Battle Results for " + current.tag);]]></script>
+        <script><![CDATA[//gs.info("CCK:ScriptAction:Get Battle Results for " + current.tag);
+
+try {
+	var r = new sn_ws.RESTMessageV2('x_53373_royalapi.RoyalAPI', 'Player Battle GET');
+	r.setStringParameterNoEscape('playerTag', current.tag);
+	
+	var response = r.execute();
+	var responseBody = response.getBody();
+	var httpStatus = response.getStatusCode();
+	
+	var battleResultsArray = JSON.parse(responseBody);
+	for ( var i in battleResultsArray) {
+		var thisJson = battleResultsArray[i];
+		gs.info("CCK: date = " + thisJson.utcTime + ", type = " + thisJson.type);
+		// Create/update result in player battle table
+		// x_53373_royalapi_player_battles
+		
+		var battleDate = new GlideDateTime();
+		battleDate.setValue("1970-01-01 00:00:00");
+		battleDate.addSeconds(thisJson.utcTime);
+		
+		var playerBattleGr = new GlideRecord('x_53373_royalapi_player_battles');
+		playerBattleGr.addEncodedQuery('epoch=' + thisJson.utcTime + '^tag=' + current.tag);
+		playerBattleGr.query();
+		var score = '';
+		if ( playerBattleGr.next()){
+			// Update existing record
+			//var newResult = new GlideRecord('x_53373_royalapi_player_battles');
+			playerBattleGr.date_time = '';
+			playerBattleGr.epoch = thisJson.utcTime;
+			score = thisJson.teamCrowns + " - " + thisJson.opponentCrowns ;
+			if ( parseInt(thisJson.teamCrowns) > parseInt(thisJson.opponentCrowns)){
+				score += " (Win)";
+			} else if (parseInt(thisJson.teamCrowns) < parseInt(thisJson.opponentCrowns)){
+				score += " (Loss)";
+			} else if ( parseInt(thisJson.teamCrowns) == parseInt(thisJson.opponentCrowns)){
+				score += " (Draw)";
+			} else {
+				score += " (???)";
+			}
+			playerBattleGr.result = score;
+			playerBattleGr.tag = current.tag;
+			playerBattleGr.type = thisJson.type;
+			playerBattleGr.date_time = battleDate;
+			playerBattleGr.player_name = event.parm1;
+			playerBattleGr.update();
+		} else {
+			// Insert a new record
+			var newResult = new GlideRecord('x_53373_royalapi_player_battles');
+			newResult.date_time = '';
+			newResult.epoch = thisJson.utcTime;
+			score = thisJson.teamCrowns + " - " + thisJson.opponentCrowns ;
+			if ( parseInt(thisJson.teamCrowns) > parseInt(thisJson.opponentCrowns)){
+				score += " (Win)";
+			} else if (parseInt(thisJson.teamCrowns) < parseInt(thisJson.opponentCrowns)){
+				score += " (Loss)";
+			} else if ( parseInt(thisJson.teamCrowns) == parseInt(thisJson.opponentCrowns)){
+				score += " (Draw)";
+			} else {
+				score += " (???)";
+			}
+			newResult.result = score;
+			newResult.tag = current.tag;
+			newResult.type = thisJson.type;
+			newResult.date_time = battleDate;
+			newResult.player_name = event.parm1;
+			newResult.insert();
+		}
+		
+		
+	}
+}
+catch(ex) {
+	var message = ex.getMessage();
+}
+
+]]></script>
         <synchronous>false</synchronous>
         <sys_class_name>sysevent_script_action</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
@@ -16,7 +92,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>985046f7db0967006a54f7fdbf9619b5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Get Battle Results</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -25,6 +101,6 @@
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sysevent_script_action_985046f7db0967006a54f7fdbf9619b5</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-16 12:40:43</sys_updated_on>
+        <sys_updated_on>2018-10-16 15:12:53</sys_updated_on>
     </sysevent_script_action>
 </record_update>
