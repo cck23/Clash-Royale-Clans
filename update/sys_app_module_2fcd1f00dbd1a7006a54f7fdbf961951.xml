@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Clan Member">645362c0db51a7006a54f7fdbf961906</application>
+        <application display_value="Royale API">b919ad73dbf713006a54f7fdbf9619a2</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -12,35 +12,35 @@
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Clan Members</mobile_title>
+        <mobile_title>Donations</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_53373_royalapi_clan_member</name>
-        <order/>
+        <name>x_53373_royalapi_clan_donations</name>
+        <order>300</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_53373_royalapi.clan_member_user</roles>
+        <roles/>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
-        <sys_created_on>2018-10-17 09:48:11</sys_created_on>
+        <sys_created_on>2018-10-17 14:04:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>e85362c0db51a7006a54f7fdbf961908</sys_id>
+        <sys_id>2fcd1f00dbd1a7006a54f7fdbf961951</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Clan Members</sys_name>
+        <sys_name>Donations</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
-        <sys_update_name>sys_app_module_e85362c0db51a7006a54f7fdbf961908</sys_update_name>
+        <sys_update_name>sys_app_module_2fcd1f00dbd1a7006a54f7fdbf961951</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-17 09:48:11</sys_updated_on>
+        <sys_updated_on>2018-10-17 14:04:01</sys_updated_on>
         <timeline_page/>
-        <title>Clan Members</title>
+        <title>Donations</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

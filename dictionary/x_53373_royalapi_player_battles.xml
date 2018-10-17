@@ -3,9 +3,12 @@
     <element label="Player Battles" max_length="40" name="x_53373_royalapi_player_battles" type="collection">
         <element label="Date Time" max_length="40" name="date_time" type="glide_date_time"/>
         <element label="Epoch" max_length="40" name="epoch" type="integer"/>
-        <element label="Player Name" max_length="40" name="player_name" type="string"/>
+        <element label="Name" max_length="32" name="name" reference="x_53373_royalapi_clan_member" type="reference"/>
         <element label="Result" max_length="40" name="result" type="string"/>
         <element label="Tag" max_length="40" name="tag" type="string"/>
         <element label="Type" max_length="40" name="type" type="string"/>
+        <index name="index">
+            <element name="name"/>
+        </index>
     </element>
 </database>

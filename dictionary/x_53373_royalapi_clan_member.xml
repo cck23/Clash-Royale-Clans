@@ -2,6 +2,7 @@
 <database>
     <element label="Clan Member" max_length="40" name="x_53373_royalapi_clan_member" type="collection">
         <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Refreshed" max_length="40" name="refreshed" type="glide_date_time"/>
         <element label="Tag" max_length="10" name="tag" type="string"/>
     </element>
 </database>

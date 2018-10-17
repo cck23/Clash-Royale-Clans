@@ -15,7 +15,7 @@
         <mobile_title>Clan War Log</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_53373_royalapi_clan_war_result</name>
-        <order>300</order>
+        <order>400</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -29,8 +29,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9a7a6d73dbf713006a54f7fdbf9619c9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Clan War Log</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>War Log</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
@@ -38,9 +38,9 @@
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_app_module_9a7a6d73dbf713006a54f7fdbf9619c9</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-08-15 07:43:07</sys_updated_on>
+        <sys_updated_on>2018-10-17 14:04:20</sys_updated_on>
         <timeline_page/>
-        <title>Clan War Log</title>
+        <title>War Log</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

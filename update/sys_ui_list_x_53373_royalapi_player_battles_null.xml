@@ -4,77 +4,107 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>date_time</element>
-            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">89086ebbdb4967006a54f7fdbf96193a</list_id>
+            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d96eb44dbd1a7006a54f7fdbf96194b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 15:30:14</sys_created_on>
-            <sys_id>01086ebbdb4967006a54f7fdbf96193b</sys_id>
+            <sys_created_on>2018-10-17 14:42:04</sys_created_on>
+            <sys_id>9196eb44dbd1a7006a54f7fdbf96194c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 15:30:14</sys_updated_on>
+            <sys_updated_on>2018-10-17 14:42:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>player_name</element>
-            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">89086ebbdb4967006a54f7fdbf96193a</list_id>
+            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d96eb44dbd1a7006a54f7fdbf96194b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 15:30:14</sys_created_on>
-            <sys_id>81086ebbdb4967006a54f7fdbf96193b</sys_id>
+            <sys_created_on>2018-10-17 14:42:04</sys_created_on>
+            <sys_id>1596eb44dbd1a7006a54f7fdbf96194c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 15:30:14</sys_updated_on>
+            <sys_updated_on>2018-10-17 14:42:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>tag</element>
-            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">89086ebbdb4967006a54f7fdbf96193a</list_id>
+            <element>name</element>
+            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d96eb44dbd1a7006a54f7fdbf96194b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 15:30:14</sys_created_on>
-            <sys_id>05086ebbdb4967006a54f7fdbf96193b</sys_id>
+            <sys_created_on>2018-10-17 14:42:04</sys_created_on>
+            <sys_id>9596eb44dbd1a7006a54f7fdbf96194c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 15:30:14</sys_updated_on>
+            <sys_updated_on>2018-10-17 14:42:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>type</element>
-            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">89086ebbdb4967006a54f7fdbf96193a</list_id>
+            <element>old_name</element>
+            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d96eb44dbd1a7006a54f7fdbf96194b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 15:30:14</sys_created_on>
-            <sys_id>85086ebbdb4967006a54f7fdbf96193b</sys_id>
+            <sys_created_on>2018-10-17 14:42:04</sys_created_on>
+            <sys_id>1996eb44dbd1a7006a54f7fdbf96194c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 15:30:14</sys_updated_on>
+            <sys_updated_on>2018-10-17 14:42:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>result</element>
-            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">89086ebbdb4967006a54f7fdbf96193a</list_id>
+            <element>tag</element>
+            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d96eb44dbd1a7006a54f7fdbf96194b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 15:30:14</sys_created_on>
-            <sys_id>09086ebbdb4967006a54f7fdbf96193b</sys_id>
+            <sys_created_on>2018-10-17 14:42:04</sys_created_on>
+            <sys_id>9996eb44dbd1a7006a54f7fdbf96194c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 15:30:14</sys_updated_on>
+            <sys_updated_on>2018-10-17 14:42:04</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>type</element>
+            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d96eb44dbd1a7006a54f7fdbf96194b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>chikwong.cheung</sys_created_by>
+            <sys_created_on>2018-10-17 14:42:04</sys_created_on>
+            <sys_id>1d96eb44dbd1a7006a54f7fdbf96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chikwong.cheung</sys_updated_by>
+            <sys_updated_on>2018-10-17 14:42:04</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>result</element>
+            <list_id display_value="x_53373_royalapi_player_battles" element="NULL" name="x_53373_royalapi_player_battles" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d96eb44dbd1a7006a54f7fdbf96194b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>chikwong.cheung</sys_created_by>
+            <sys_created_on>2018-10-17 14:42:04</sys_created_on>
+            <sys_id>9d96eb44dbd1a7006a54f7fdbf96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chikwong.cheung</sys_updated_by>
+            <sys_updated_on>2018-10-17 14:42:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -88,11 +118,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 15:30:14</sys_created_on>
+            <sys_created_on>2018-10-17 14:42:04</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>89086ebbdb4967006a54f7fdbf96193a</sys_id>
+            <sys_id>1d96eb44dbd1a7006a54f7fdbf96194b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_53373_royalapi_player_battles</sys_name>
             <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -101,7 +131,7 @@
             <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
             <sys_update_name>sys_ui_list_x_53373_royalapi_player_battles_null</sys_update_name>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 15:30:14</sys_updated_on>
+            <sys_updated_on>2018-10-17 14:42:04</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

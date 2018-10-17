@@ -76,7 +76,7 @@ royaleAPIClanExtract.prototype = {
 						//newDonationGR.tag = members[i].tag.toString();
 						donationRecSysId = newDonationGR.insert();
 					}
-					gs.debug('donation sys_id = ' + donationRecSysId);
+					//gs.debug('donation sys_id = ' + donationRecSysId);
 					var donationGR2 = new GlideRecord('x_53373_royalapi_clan_donations');
 					donationGR2.get(donationRecSysId);
 					donationGR2.name = clanMemberSysId;
@@ -121,29 +121,35 @@ royaleAPIClanExtract.prototype = {
 				
 				for ( var j = 0 ; j < thisParticipants.length ; j++) {
 					var partipantsJson = thisParticipants[j];
-					var clanWarLogGr = new GlideRecord('x_53373_royalapi_clan_war_result');
-					clanWarLogGr.addQuery('created_date', thisJson.createdDate);
-					// clan_war_date
-					clanWarLogGr.addEncodedQuery('tag=' + partipantsJson.tag);
-					clanWarLogGr.query();
-					
-					if ( clanWarLogGr.next()){
-						clanWarLogGr.name = partipantsJson.name;
-						clanWarLogGr.cards_earned = partipantsJson.cardsEarned;
-						clanWarLogGr.battles_played = partipantsJson.battlesPlayed;
-						clanWarLogGr.wins = partipantsJson.wins;
-						clanWarLogGr.clan_war_date = clanWarDate ;
-						clanWarLogGr.update();
-					} else {
-						// create the record
-						clanWarLogGr.created_date = thisJson.createdDate;
-						clanWarLogGr.tag = partipantsJson.tag;
-						clanWarLogGr.name = partipantsJson.name;
-						clanWarLogGr.cards_earned = partipantsJson.cardsEarned;
-						clanWarLogGr.battles_played = partipantsJson.battlesPlayed;
-						clanWarLogGr.wins = partipantsJson.wins;
-						clanWarLogGr.clan_war_date = clanWarDate ;
-						clanWarLogGr.insert();
+					var member = new GlideRecord('x_53373_royalapi_clan_member');
+					member.addEncodedQuery('name=' + partipantsJson.name);
+					member.query();
+					if ( member.next()){
+						var clanWarLogGr = new GlideRecord('x_53373_royalapi_clan_war_result');
+						clanWarLogGr.addQuery('created_date', thisJson.createdDate);
+						//name.tag=2LYGQ2QG
+						clanWarLogGr.addEncodedQuery('name.tag=' + partipantsJson.tag);
+						gs.debug('name.tag=' + partipantsJson.tag);
+						clanWarLogGr.query();
+
+						if ( clanWarLogGr.next()){
+							clanWarLogGr.name = member.sys_id;
+							clanWarLogGr.cards_earned = partipantsJson.cardsEarned;
+							clanWarLogGr.battles_played = partipantsJson.battlesPlayed;
+							clanWarLogGr.wins = partipantsJson.wins;
+							clanWarLogGr.clan_war_date = clanWarDate ;
+							clanWarLogGr.update();
+						} else {
+							// create the record
+							clanWarLogGr.created_date = thisJson.createdDate;
+							//clanWarLogGr.tag = partipantsJson.tag;
+							clanWarLogGr.name = member.syd_id;
+							clanWarLogGr.cards_earned = partipantsJson.cardsEarned;
+							clanWarLogGr.battles_played = partipantsJson.battlesPlayed;
+							clanWarLogGr.wins = partipantsJson.wins;
+							clanWarLogGr.clan_war_date = clanWarDate ;
+							clanWarLogGr.insert();
+						}
 					}
 				}
 				// Get clan standings
@@ -194,7 +200,7 @@ royaleAPIClanExtract.prototype = {
         <sys_created_on>2018-08-14 14:00:10</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5517fde3db3313006a54f7fdbf96193a</sys_id>
-        <sys_mod_count>95</sys_mod_count>
+        <sys_mod_count>100</sys_mod_count>
         <sys_name>royaleAPIClanExtract</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy>read</sys_policy>
@@ -202,6 +208,6 @@ royaleAPIClanExtract.prototype = {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_script_include_5517fde3db3313006a54f7fdbf96193a</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-17 13:10:28</sys_updated_on>
+        <sys_updated_on>2018-10-17 14:29:02</sys_updated_on>
     </sys_script_include>
 </record_update>

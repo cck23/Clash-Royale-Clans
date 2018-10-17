@@ -20,7 +20,7 @@ try {
 	var battleResultsArray = JSON.parse(responseBody);
 	for ( var i in battleResultsArray) {
 		var thisJson = battleResultsArray[i];
-		gs.info("CCK: date = " + thisJson.utcTime + ", type = " + thisJson.type);
+		//gs.info("CCK: date = " + thisJson.utcTime + ", type = " + thisJson.type);
 		// Create/update result in player battle table
 		// x_53373_royalapi_player_battles
 		
@@ -51,7 +51,7 @@ try {
 			playerBattleGr.tag = current.tag;
 			playerBattleGr.type = thisJson.type;
 			playerBattleGr.date_time = battleDate;
-			playerBattleGr.player_name = event.parm1;
+			playerBattleGr.name = event.parm1;
 			playerBattleGr.update();
 		} else {
 			// Insert a new record
@@ -72,12 +72,17 @@ try {
 			newResult.tag = current.tag;
 			newResult.type = thisJson.type;
 			newResult.date_time = battleDate;
-			newResult.player_name = event.parm1;
+			newResult.name = event.parm1;
 			newResult.insert();
 		}
-		
-		
 	}
+	var memberGr = new GlideRecord('x_53373_royalapi_clan_member');
+	memberGr.get(event.parm1);
+	//gs.info("CCK: event.parm1 = " + event.parm1);
+	var gdt = new GlideDateTime();
+	//gs.info("CCK: gdt = " + gdt);
+	memberGr.refreshed = gdt;
+	memberGr.update();
 }
 catch(ex) {
 	var message = ex.getMessage();
@@ -92,7 +97,7 @@ catch(ex) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>985046f7db0967006a54f7fdbf9619b5</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Get Battle Results</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -101,6 +106,6 @@ catch(ex) {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sysevent_script_action_985046f7db0967006a54f7fdbf9619b5</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-16 15:12:53</sys_updated_on>
+        <sys_updated_on>2018-10-17 15:01:08</sys_updated_on>
     </sysevent_script_action>
 </record_update>

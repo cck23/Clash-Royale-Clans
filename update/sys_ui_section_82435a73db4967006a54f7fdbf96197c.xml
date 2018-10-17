@@ -127,6 +127,34 @@
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>old_name</element>
+            <position>9</position>
+            <sys_created_by>chikwong.cheung</sys_created_by>
+            <sys_created_on>2018-10-17 14:37:06</sys_created_on>
+            <sys_id>5075a344dbd1a7006a54f7fdbf961923</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
+            <sys_updated_by>chikwong.cheung</sys_updated_by>
+            <sys_updated_on>2018-10-17 14:37:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>10</position>
+            <sys_created_by>chikwong.cheung</sys_created_by>
+            <sys_created_on>2018-10-17 14:41:37</sys_created_on>
+            <sys_id>3e76eb44dbd1a7006a54f7fdbf9619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
+            <sys_updated_by>chikwong.cheung</sys_updated_by>
+            <sys_updated_on>2018-10-17 14:41:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
