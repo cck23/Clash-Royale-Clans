@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="name" table="x_53373_royalapi_clan_war_result">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="name" table="x_53373_royalapi_clan_member">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -31,15 +31,15 @@
         <element>name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
-        <name>x_53373_royalapi_clan_war_result</name>
+        <max_length>40</max_length>
+        <name>x_53373_royalapi_clan_member</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_53373_royalapi_clan_member">x_53373_royalapi_clan_member</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -51,18 +51,18 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
-        <sys_created_on>2018-10-17 13:20:12</sys_created_on>
+        <sys_created_on>2018-10-17 09:48:39</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>0bb35bc8db91a7006a54f7fdbf96197a</sys_id>
+        <sys_id>2d5362c0db51a7006a54f7fdbf9619c4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Name</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
-        <sys_update_name>sys_dictionary_x_53373_royalapi_clan_war_result_name</sys_update_name>
+        <sys_update_name>sys_dictionary_x_53373_royalapi_clan_member_name</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-17 13:20:12</sys_updated_on>
+        <sys_updated_on>2018-10-17 09:48:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

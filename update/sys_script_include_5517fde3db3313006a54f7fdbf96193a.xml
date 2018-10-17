@@ -11,18 +11,21 @@
 royaleAPIClanExtract.prototype = {
 	initialize: function() {
 		this.currentMembers = [];
+		this.currentMembers2 = [];
 	},
 	
 	get: function(){
 		try {
+			// x_53373_royalapi_clan_donations
 			var r = new sn_ws.RESTMessageV2('x_53373_royalapi.RoyalAPI', 'Default GET');
 			
 			var gdt = new GlideDateTime();
 			var dayOfWeek = gdt.getDayOfWeekUTC() - 1;
 			gdt.addSeconds( -dayOfWeek * 86400);
 			
-			var weekBeginning = new GlideDateTime();
-			weekBeginning.setValue(gdt.getValue().split(' ')[0] +  " 00:00:00");
+			//var weekBeginning = new GlideDateTime();
+			//weekBeginning.setValue(gdt.getValue().split(' ')[0] +  " 00:00:00");
+			weekBeginning = gdt.getValue().split(' ')[0];
 			
 			var response = r.execute();
 			var responseBody = response.getBody();
@@ -36,33 +39,54 @@ royaleAPIClanExtract.prototype = {
 					
 					// Create an array of current members
 					this.currentMembers.push("tag!=" + members[i].tag.toString());
+					this.currentMembers2.push("name.tag!=" + members[i].tag.toString());
 					
-					var memberGR = new GlideRecord('x_53373_royalapi_clan_members');
-					gs.debug('searching for ' + members[i].tag.toString());
-					memberGR.addQuery('tag',members[i].tag.toString());
-					memberGR.addQuery('week_beginning',weekBeginning);
-					memberGR.query();
-					var memberSysId = '';
-					if ( memberGR.next()){
-						memberSysId = memberGR.sys_id;
+					// Create the clan_member record if required
+					var clanMemberGr = new GlideRecord('x_53373_royalapi_clan_member');
+					clanMemberGr.addEncodedQuery('tag=' + members[i].tag.toString());
+					clanMemberGr.query();
+					var clanMemberSysId = '';
+					if ( clanMemberGr.next() ){
+						clanMemberSysId = clanMemberGr.sys_id;
 					} else {
-						// Create the new record
-						var newMemberGR = new GlideRecord('x_53373_royalapi_clan_members');
-						newMemberGR.name = members[i].name;
-						newMemberGR.tag = members[i].tag.toString();
-						memberSysId = newMemberGR.insert();
+						var newClanMemberGr = new GlideRecord('x_53373_royalapi_clan_member');
+						newClanMemberGr.name = members[i].name.toString();
+						newClanMemberGr.tag = members[i].tag.toString();
+						clanMemberSysId = newClanMemberGr.insert();
 					}
-					//gs.debug('sys_id = ' + memberSysId);
-					var memberGR2 = new GlideRecord('x_53373_royalapi_clan_members');
-					memberGR2.get(memberSysId);
-					memberGR2.name = members[i].name;
-					//gs.debug('sys_id = ' + memberSysId + );
+					
+					// gs.debug('searching for ' + members[i].tag.toString());
+					// create the donations record - x_53373_royalapi_clan_donations
+					var donationGR = new GlideRecord('x_53373_royalapi_clan_donations');
+					//gs.debug("name.name=" + members[i].tag.toString() + "^week_beginning=" + weekBeginning);
+					donationGR.addEncodedQuery("name.tag=" + members[i].tag.toString() + "^week_beginning=" + weekBeginning);
+					donationGR.query();
+					var donationRecSysId = '';
+					if ( donationGR.next()){
+						donationRecSysId = donationGR.sys_id;
+					} else {
+						
+						// get the sys id of the member record
+						var clanMemberGr2 = new GlideRecord('x_53373_royalapi_clan_member');
+						clanMemberGr2.get(clanMemberSysId);
+						//gs.debug(clanMemberSysId);
+						// Create the new record						
+						var newDonationGR = new GlideRecord('x_53373_royalapi_clan_donations');
+						newDonationGR.name = clanMemberGr2.sys_id.toString();
+						//newDonationGR.tag = members[i].tag.toString();
+						donationRecSysId = newDonationGR.insert();
+					}
+					gs.debug('donation sys_id = ' + donationRecSysId);
+					var donationGR2 = new GlideRecord('x_53373_royalapi_clan_donations');
+					donationGR2.get(donationRecSysId);
+					donationGR2.name = clanMemberSysId;
+					//gs.debug('sys_id = ' + donationRecSysId + );
 					if ( members[i].donations > 0 || members[i].donationsReceived > 0){
-						memberGR2.donations = members[i].donations;
-						memberGR2.donations_received = members[i].donationsReceived;
+						donationGR2.donations = parseInt(members[i].donations);
+						donationGR2.donations_received = parseInt(members[i].donationsReceived);
 					}
-					memberGR2.week_beginning = weekBeginning;
-					memberGR2.update();
+					donationGR2.week_beginning = weekBeginning;
+					donationGR2.update();
 				}
 				
 				
@@ -151,10 +175,15 @@ royaleAPIClanExtract.prototype = {
 	},
 	
 	deleteOldMembers: function(){
-		var memberGR = new GlideRecord('x_53373_royalapi_clan_members');
+		var memberGR = new GlideRecord('x_53373_royalapi_clan_member');
 		memberGR.addEncodedQuery(this.currentMembers.join("^"));
 		memberGR.query();
 		memberGR.deleteMultiple();
+		
+		var donationGR = new GlideRecord('x_53373_royalapi_clan_donations');
+		donationGR.addEncodedQuery(this.currentMembers2.join("^"));
+		donationGR.query();
+		donationGR.deleteMultiple();
 	},
 	
 	
@@ -165,7 +194,7 @@ royaleAPIClanExtract.prototype = {
         <sys_created_on>2018-08-14 14:00:10</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5517fde3db3313006a54f7fdbf96193a</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>95</sys_mod_count>
         <sys_name>royaleAPIClanExtract</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy>read</sys_policy>
@@ -173,6 +202,6 @@ royaleAPIClanExtract.prototype = {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_script_include_5517fde3db3313006a54f7fdbf96193a</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-16 13:07:24</sys_updated_on>
+        <sys_updated_on>2018-10-17 13:10:28</sys_updated_on>
     </sys_script_include>
 </record_update>
