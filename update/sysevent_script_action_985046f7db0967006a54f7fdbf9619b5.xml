@@ -7,9 +7,7 @@
         <event_name>x_53373_royalapi.battle.results</event_name>
         <name>Get Battle Results</name>
         <order>100</order>
-        <script><![CDATA[//gs.info("CCK:ScriptAction:Get Battle Results for " + current.tag);
-
-try {
+        <script><![CDATA[try {
 	var r = new sn_ws.RESTMessageV2('x_53373_royalapi.RoyalAPI', 'Player Battle GET');
 	r.setStringParameterNoEscape('playerTag', current.tag);
 	
@@ -82,6 +80,53 @@ try {
 	var gdt = new GlideDateTime();
 	//gs.info("CCK: gdt = " + gdt);
 	memberGr.refreshed = gdt;
+	
+	var teamBattleResults = new GlideRecord('x_53373_royalapi_player_battles');
+	teamBattleResults.addEncodedQuery('tag=' + current.tag + '^type=2v2');
+	teamBattleResults.setLimit(30);
+	teamBattleResults.orderByDesc('date_time');
+	teamBattleResults.query();
+	var count = 0;
+	var wins = 0;
+	var losses = 0;
+	var draws = 0;
+	while ( teamBattleResults.next()){
+		count = count + 1;
+		//gs.info("CCK: date_time = " + teamBattleResults.date_time + " , result = " + teamBattleResults.result);
+		if ( teamBattleResults.result.indexOf('Win') > -1 ){
+			wins = wins + 1;
+		} else if ( teamBattleResults.result.indexOf('Loss') > -1 ) {
+			losses = losses + 1;
+		} else {
+			draws = draws + 1;
+		}
+					
+	}
+	//gs.info("CCK: team wins = " + wins + ", count = " + count + 'losses = ' + losses + ", draws = " + draws);
+	memberGr.team_win_rate = (count > 0) ? parseInt((wins/count)*100):0;
+	
+	
+	var pvpBattleResults = new GlideRecord('x_53373_royalapi_player_battles');
+	pvpBattleResults.addEncodedQuery('tag=' + current.tag + '^type=PvP');
+	pvpBattleResults.setLimit(30);
+	pvpBattleResults.orderByDesc('date_time');
+	pvpBattleResults.query();
+	count = 0;
+	wins = 0;
+	losses = 0;
+	draws = 0;
+	
+	while ( pvpBattleResults.next()){
+		count = count + 1;
+		if ( pvpBattleResults.result.indexOf('Win') > -1 ){
+			wins = wins + 1;
+		} else if ( pvpBattleResults.result.indexOf('Loss') > -1 ) {
+			losses = losses + 1;
+		} else {
+			draws = draws + 1;
+		}
+	}
+	memberGr.pvp_win_rate = ( count > 0) ? parseInt((wins/count)*100): 0 ;
 	memberGr.update();
 }
 catch(ex) {
@@ -97,7 +142,7 @@ catch(ex) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>985046f7db0967006a54f7fdbf9619b5</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Get Battle Results</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -106,6 +151,6 @@ catch(ex) {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sysevent_script_action_985046f7db0967006a54f7fdbf9619b5</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-17 15:01:08</sys_updated_on>
+        <sys_updated_on>2018-10-19 09:54:10</sys_updated_on>
     </sysevent_script_action>
 </record_update>
