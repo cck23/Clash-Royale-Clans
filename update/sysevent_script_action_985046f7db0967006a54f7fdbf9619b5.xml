@@ -74,6 +74,8 @@
 			newResult.insert();
 		}
 	}
+	
+	
 	var memberGr = new GlideRecord('x_53373_royalapi_clan_member');
 	memberGr.get(event.parm1);
 	//gs.info("CCK: event.parm1 = " + event.parm1);
@@ -81,6 +83,35 @@
 	//gs.info("CCK: gdt = " + gdt);
 	memberGr.refreshed = gdt;
 	
+	var battleTypes = [["clanWarCollectionDay","collection_day_win_rate"],["2v2","team_win_rate"],["PvP","pvp_win_rate"]];
+	for ( var i in battleTypes){
+		var battleResult = new GlideRecord('x_53373_royalapi_player_battles');
+		battleResult.addEncodedQuery('tag=' + current.tag + '^type=' + battleTypes[i][0]);
+		battleResult.setLimit(30);
+		battleResult.orderByDesc('date_time');
+		battleResult.query();
+		var count = 0;
+		var wins = 0;
+		var losses = 0;
+		var draws = 0;
+		while ( battleResult.next()){
+			count = count + 1;
+			if ( battleResult.result.indexOf('Win') > -1 ){
+				wins = wins + 1;
+			} else if ( battleResult.result.indexOf('Loss') > -1 ) {
+				losses = losses + 1;
+			} else {
+				draws = draws + 1;
+			}
+			
+		}
+		memberGr[battleTypes[i][1]] = (count > 0) ? parseInt((wins/count)*100):0;
+	}
+	
+	memberGr.update();
+	
+	
+	/*
 	var teamBattleResults = new GlideRecord('x_53373_royalapi_player_battles');
 	teamBattleResults.addEncodedQuery('tag=' + current.tag + '^type=2v2');
 	teamBattleResults.setLimit(30);
@@ -100,11 +131,10 @@
 		} else {
 			draws = draws + 1;
 		}
-					
+		
 	}
 	//gs.info("CCK: team wins = " + wins + ", count = " + count + 'losses = ' + losses + ", draws = " + draws);
 	memberGr.team_win_rate = (count > 0) ? parseInt((wins/count)*100):0;
-	
 	
 	var pvpBattleResults = new GlideRecord('x_53373_royalapi_player_battles');
 	pvpBattleResults.addEncodedQuery('tag=' + current.tag + '^type=PvP');
@@ -127,7 +157,8 @@
 		}
 	}
 	memberGr.pvp_win_rate = ( count > 0) ? parseInt((wins/count)*100): 0 ;
-	memberGr.update();
+	*/
+	//memberGr.update();
 }
 catch(ex) {
 	var message = ex.getMessage();
@@ -142,7 +173,7 @@ catch(ex) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>985046f7db0967006a54f7fdbf9619b5</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Get Battle Results</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -151,6 +182,6 @@ catch(ex) {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sysevent_script_action_985046f7db0967006a54f7fdbf9619b5</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-19 09:54:10</sys_updated_on>
+        <sys_updated_on>2018-10-22 12:59:10</sys_updated_on>
     </sysevent_script_action>
 </record_update>
