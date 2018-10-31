@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_53373_royalapi.battle.results</event_name>
+        <name>Get All Battle Results</name>
+        <order>100</order>
+        <script><![CDATA[// Get all members
+var allMembersArray = [];
+
+var allMembersGr = new GlideRecord('x_53373_royalapi_clan_member');
+allMembersGr.query();
+var tagToSysId = {};
+
+while ( allMembersGr.next()){
+	allMembersArray.push(allMembersGr.tag.toString());
+	tagToSysId[allMembersGr.tag.toString()] = allMembersGr.sys_id.toString();
+}
+
+var allPlayerTags = allMembersArray.join(",");
+
+gs.info("CCK:ScriptAction:Get All Battle Results, members = " + allPlayerTags);
+
+try {
+	
+	var r = new sn_ws.RESTMessageV2('x_53373_royalapi.RoyalAPI', 'Player Battle GET');
+	r.setStringParameterNoEscape('playerTag', allPlayerTags);
+	//r.setStringParameterNoEscape('playerTag', '9LL2PQR0');
+	//r.setStringParameterNoEscape('playerTag', allMembersArray[clanMember]);
+	
+	var response = r.execute();
+	var responseBody = response.getBody();
+	var httpStatus = response.getStatusCode();
+	
+	var battleResultsArray = JSON.parse(responseBody);
+	
+	//gs.info("CCK:ScriptAction:Get All Battle Results: httpStatus = " + httpStatus + " length = " + battleResultsArray.length + ", processing " + battleResultsArray.length + " battle results");
+	for ( var i in battleResultsArray){
+		
+		var thisJson = battleResultsArray[i];
+		
+		var battleDate = new GlideDateTime();
+		battleDate.setValue("1970-01-01 00:00:00");
+		battleDate.addSeconds(thisJson.utcTime);
+		
+		var thisTeam = thisJson.team;
+		//gs.info( "CCK:ScriptAction:Get All Battle Results:" + i + ":" + thisJson.type);
+		// Loop through 'team' first
+		var teamArray = thisJson.team;
+		var opponentArray = thisJson.opponent;
+		var epoch = thisJson.utcTime;
+		
+		for ( var j in teamArray) {
+			if ( isClanMember(teamArray[j].tag,allMembersArray) ){
+				if ( teamArray.length == 1){
+					addBattleResult(epoch, battleDate, thisJson.type, thisJson.teamCrowns,thisJson.opponentCrowns,[teamArray[j].name,teamArray[j].tag],"");
+				} else {
+					var otherPlayer = ( j == 0 ) ? 1 : 0 ;
+					addBattleResult(epoch, battleDate, thisJson.type, thisJson.teamCrowns,thisJson.opponentCrowns,[teamArray[j].name,teamArray[j].tag], teamArray[otherPlayer].name + " [" + teamArray[otherPlayer].tag + "]");
+				}
+				
+			}
+		}
+		//gs.debug('---');
+		// Loop through 'opponent'
+		for ( var k in opponentArray) {
+			if ( isClanMember(opponentArray[k].tag,allMembersArray) ){
+				if ( opponentArray.length == 1){
+					addBattleResult(epoch, battleDate, thisJson.type, thisJson.opponentCrowns,thisJson.teamCrowns,[opponentArray[k].name,opponentArray[k].tag],"");
+				} else {
+					var otherPlayer = ( j == 0 ) ? 1 : 0 ;
+					addBattleResult(epoch, battleDate, thisJson.type, thisJson.opponentCrowns,thisJson.teamCrowns,[opponentArray[k].name,opponentArray[k].tag], opponentArray[otherPlayer].name + " [" + opponentArray[otherPlayer].tag + "]");
+				}
+			}
+		}
+		
+	}
+	
+	
+	var memberGr = new GlideRecord('x_53373_royalapi_clan_member');
+	memberGr.get(event.parm1);
+	//gs.info("CCK: event.parm1 = " + event.parm1);
+	var gdt = new GlideDateTime();
+	//gs.info("CCK: gdt = " + gdt);
+	memberGr.refreshed = gdt;
+	
+}
+catch(ex) {
+	gs.info("CCK:ScriptAction:Get All Battle Results:error: " + ex.message);
+	var message = ex.getMessage();
+}
+
+
+
+// Create Win Rates
+
+var allMembersGr2 = new GlideRecord('x_53373_royalapi_clan_member');
+allMembersGr2.addActiveQuery();
+allMembersGr2.query();
+var battleTypes = [["clanWarCollectionDay","collection_day_win_rate"],["2v2","team_win_rate"],["PvP","pvp_win_rate"]];
+
+while ( allMembersGr2.next()){
+	for ( var i in battleTypes){
+		var battleResult = new GlideRecord('x_53373_royalapi_player_battles');
+		battleResult.addEncodedQuery('tag=' + allMembersGr2.tag + '^type=' + battleTypes[i][0]);
+		battleResult.setLimit(30);
+		battleResult.orderByDesc('date_time');
+		battleResult.query();
+		var count = 0;
+		var wins = 0;
+		var losses = 0;
+		var draws = 0;
+		while ( battleResult.next()){
+			count = count + 1;
+			if ( battleResult.result.indexOf('Win') > -1 ){
+				wins = wins + 1;
+			} else if ( battleResult.result.indexOf('Loss') > -1 ) {
+				losses = losses + 1;
+			} else {
+				draws = draws + 1;
+			}
+		}
+		allMembersGr2[battleTypes[i][1]] = (count > 5) ? parseInt((wins/count)*100):0;
+		allMembersGr2.refreshed = new GlideDateTime();
+		allMembersGr2.update();
+	}
+}
+
+function isClanMember(tag,allMembersArray) {
+   if ( allMembersArray.indexOf(tag) > -1){
+      return true;
+   } else {
+      return false;
+   }
+}
+
+function addBattleResult(epoch, battleDate, type, teamScore, opponentScore, player1, player2){
+	var teamMate = player2 || "";
+	if ( epoch == '1540372548') {
+		//gs.info('CCK:ScriptAction:Get All Battle Results: epoch = ' + epoch + 'type = ' + type + ', score = ' + teamScore + "-" + opponentScore + " : " + teamMate);
+	}
+   
+	//gs.debug('epoch=' + epoch + '^tag=' + player1[1]);
+	//1540372548
+	var playerBattleGr = new GlideRecord('x_53373_royalapi_player_battles');
+	playerBattleGr.addEncodedQuery('epoch=' + epoch + '^tag=' + player1[1]);
+	playerBattleGr.query();
+	var score = '';
+	if ( playerBattleGr.next()){
+		//if ( epoch == '1540372548') { //gs.info('CCK:ScriptAction:Get All Battle Results: found'); }
+		// Update existing record
+		playerBattleGr.epoch = epoch;
+		score = teamScore + " - " + opponentScore ;
+		if ( parseInt(teamScore) > parseInt(opponentScore)){
+			score += " (Win)";
+		} else if ( parseInt(teamScore) < parseInt(opponentScore) ) {
+			score += " (Loss)";
+		} else if ( parseInt(teamScore) == parseInt(opponentScore) ){
+			score += " (Draw)";
+		} else {
+			score += " (???)";
+		}
+		playerBattleGr.result = score;
+		playerBattleGr.tag = player1[1];
+		playerBattleGr.type = type;
+		playerBattleGr.date_time = battleDate;
+		playerBattleGr.name = tagToSysId[player1[1]];
+		playerBattleGr.team_mate = teamMate;
+		playerBattleGr.update();
+	} else {
+		// Insert a new record
+		//if ( epoch == '1540372548') { gs.info('CCK:ScriptAction:Get All Battle Results: NOT found'); }
+		var newResult = new GlideRecord('x_53373_royalapi_player_battles');
+		newResult.epoch = epoch;
+		score = teamScore + " - " + opponentScore ;
+		if ( parseInt(teamScore) > parseInt(opponentScore)){
+			score += " (Win)";
+		} else if ( parseInt(teamScore) < parseInt(opponentScore) ) {
+			score += " (Loss)";
+		} else if ( parseInt(teamScore) == parseInt(opponentScore) ){
+			score += " (Draw)";
+		} else {
+			score += " (???)";
+		}
+		newResult.result = score;
+		newResult.tag = player1[1];
+		newResult.type = type;
+		newResult.date_time = battleDate;
+		newResult.name = tagToSysId[player1[1]];
+		newResult.team_mate = teamMate;
+		newResult.insert();
+   }
+	
+}
+
+]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>chikwong.cheung</sys_created_by>
+        <sys_created_on>2018-10-24 09:02:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>edeb1a5adb15ab006a54f7fdbf961987</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>Get All Battle Results</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
+        <sys_update_name>sysevent_script_action_edeb1a5adb15ab006a54f7fdbf961987</sys_update_name>
+        <sys_updated_by>chikwong.cheung</sys_updated_by>
+        <sys_updated_on>2018-10-31 09:32:01</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

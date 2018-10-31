@@ -30,7 +30,7 @@ royaleAPIClanExtract.prototype = {
 			var response = r.execute();
 			var responseBody = response.getBody();
 			var httpStatus = response.getStatusCode();
-			gs.debug('httpStatus = ' + httpStatus);
+			gs.info('CCK:SI:royaleAPIClanExtract:httpStatus = ' + httpStatus);
 			if ( httpStatus == '200'){
 				
 				var responseJSON = JSON.parse(responseBody);
@@ -180,16 +180,19 @@ royaleAPIClanExtract.prototype = {
 		}
 	},
 	
-	deleteOldMembers: function(){
+	deactivateOldMembers: function(){
 		var memberGR = new GlideRecord('x_53373_royalapi_clan_member');
 		memberGR.addEncodedQuery(this.currentMembers.join("^"));
 		memberGR.query();
-		memberGR.deleteMultiple();
+		memberGR.active = false;
+		memberGR.updateMultiple();
 		
+		/*
 		var donationGR = new GlideRecord('x_53373_royalapi_clan_donations');
 		donationGR.addEncodedQuery(this.currentMembers2.join("^"));
 		donationGR.query();
-		donationGR.deleteMultiple();
+		// donationGR.deleteMultiple();
+		*/
 	},
 	
 	
@@ -200,7 +203,7 @@ royaleAPIClanExtract.prototype = {
         <sys_created_on>2018-08-14 14:00:10</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5517fde3db3313006a54f7fdbf96193a</sys_id>
-        <sys_mod_count>100</sys_mod_count>
+        <sys_mod_count>104</sys_mod_count>
         <sys_name>royaleAPIClanExtract</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy>read</sys_policy>
@@ -208,6 +211,6 @@ royaleAPIClanExtract.prototype = {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_script_include_5517fde3db3313006a54f7fdbf96193a</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-17 14:29:02</sys_updated_on>
+        <sys_updated_on>2018-10-31 09:03:43</sys_updated_on>
     </sys_script_include>
 </record_update>

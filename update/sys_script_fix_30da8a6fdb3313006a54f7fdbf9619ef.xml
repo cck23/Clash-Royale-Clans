@@ -10,7 +10,7 @@
         <script><![CDATA[var si = new x_53373_royalapi.royaleAPIClanExtract();
 si.get();
 si.getClanWarLog();
-si.deleteOldMembers();
+si.deactivateOldMembers();
 
 /*
 var gr = new GlideRecord('x_53373_royalapi_clan_donations');
@@ -21,7 +21,7 @@ gr.deleteMultiple();
         <sys_created_on>2018-08-14 15:25:56</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>30da8a6fdb3313006a54f7fdbf9619ef</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>RoyaleAPI</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
@@ -29,7 +29,7 @@ gr.deleteMultiple();
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_script_fix_30da8a6fdb3313006a54f7fdbf9619ef</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-17 14:30:55</sys_updated_on>
+        <sys_updated_on>2018-10-31 08:47:38</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
