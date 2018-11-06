@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Clan Member" max_length="40" name="x_53373_royalapi_clan_member" type="collection">
-        <element default="True" label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Collection Day Win Rate" max_length="40" name="collection_day_win_rate" type="integer"/>
         <element label="Name" max_length="40" name="name" type="string"/>
         <element label="PvP Win Rate" max_length="40" name="pvp_win_rate" type="integer"/>
