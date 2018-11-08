@@ -100,7 +100,7 @@ royaleAPIClanExtract.prototype = {
 			gs.info("CCK: error = " + ex.message);
 		}
 		
-		gs.info("CCK: this.currentMembers = " + this.currentMembers + ", this.currentMembers2 = " + this.currentMembers2);
+		//gs.info("CCK: this.currentMembers = " + this.currentMembers + ", this.currentMembers2 = " + this.currentMembers2);
 		
 	},
 	
@@ -208,7 +208,7 @@ royaleAPIClanExtract.prototype = {
         <sys_created_on>2018-08-14 14:00:10</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5517fde3db3313006a54f7fdbf96193a</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>109</sys_mod_count>
         <sys_name>royaleAPIClanExtract</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy>read</sys_policy>
@@ -216,6 +216,6 @@ royaleAPIClanExtract.prototype = {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_script_include_5517fde3db3313006a54f7fdbf96193a</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-31 22:51:17</sys_updated_on>
+        <sys_updated_on>2018-11-08 15:43:06</sys_updated_on>
     </sys_script_include>
 </record_update>
