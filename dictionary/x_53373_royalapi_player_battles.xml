@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Player Battles" max_length="40" name="x_53373_royalapi_player_battles" type="collection">
+    <element label="Player Battles" max_length="40" name="x_53373_royalapi_player_battles" sizeclass="5198" type="collection">
         <element label="Date Time" max_length="40" name="date_time" type="glide_date_time"/>
         <element label="Epoch" max_length="40" name="epoch" type="integer"/>
         <element label="Name" max_length="32" name="name" reference="x_53373_royalapi_clan_member" type="reference"/>
