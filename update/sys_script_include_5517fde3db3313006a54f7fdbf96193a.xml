@@ -108,14 +108,15 @@ royaleAPIClanExtract.prototype = {
 	},
 	
 	getClanWarLog: function(){
+		gs.debug("CCK: getClanWarLog: start");
 		try {
 			var r = new sn_ws.RESTMessageV2('x_53373_royalapi.RoyalAPI', 'Warlog GET');
 			var response = r.execute();
 			var responseBody = response.getBody();
 			var httpStatus = response.getStatusCode();
-			gs.debug(httpStatus);
+			gs.debug("CCK: getClanWarLog: " + httpStatus);
 			var clanWarLogArray = JSON.parse(responseBody);
-			gs.debug('number of clan wars = ' + clanWarLogArray.length);
+			gs.debug('CCK: number of clan wars = ' + clanWarLogArray.length);
 			for ( var i = 0 ; i < clanWarLogArray.length ; i++ ){
 				//gs.debug(i + ":" + clanWarLogArray[i]);
 				var thisJson = clanWarLogArray[i];
@@ -133,6 +134,7 @@ royaleAPIClanExtract.prototype = {
 					member.addEncodedQuery('name=' + partipantsJson.name);
 					member.query();
 					if ( member.next()){
+						//gs.debug("CCK: 1. member.syd_id = " + member.sys_id);
 						var clanWarLogGr = new GlideRecord('x_53373_royalapi_clan_war_result');
 						clanWarLogGr.addQuery('created_date', thisJson.createdDate);
 						//name.tag=2LYGQ2QG
@@ -151,7 +153,8 @@ royaleAPIClanExtract.prototype = {
 							// create the record
 							clanWarLogGr.created_date = thisJson.createdDate;
 							//clanWarLogGr.tag = partipantsJson.tag;
-							clanWarLogGr.name = member.syd_id;
+							//gs.debug("CCK: 2. member.syd_id = " + member.sys_id);
+							clanWarLogGr.name = member.sys_id;
 							clanWarLogGr.cards_earned = partipantsJson.cardsEarned;
 							clanWarLogGr.battles_played = partipantsJson.battlesPlayed;
 							clanWarLogGr.wins = partipantsJson.wins;
@@ -184,7 +187,8 @@ royaleAPIClanExtract.prototype = {
 			}
 		}
 		catch(ex) {
-			var message = ex.message();
+			var message = ex.message;
+			gs.debug("CCK: error in getClanWarLog: " + message);
 		}
 	},
 	
@@ -213,7 +217,7 @@ royaleAPIClanExtract.prototype = {
         <sys_created_on>2018-08-14 14:00:10</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5517fde3db3313006a54f7fdbf96193a</sys_id>
-        <sys_mod_count>115</sys_mod_count>
+        <sys_mod_count>123</sys_mod_count>
         <sys_name>royaleAPIClanExtract</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy>read</sys_policy>
@@ -221,6 +225,6 @@ royaleAPIClanExtract.prototype = {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_script_include_5517fde3db3313006a54f7fdbf96193a</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-11-21 11:14:07</sys_updated_on>
+        <sys_updated_on>2018-11-26 20:08:53</sys_updated_on>
     </sys_script_include>
 </record_update>
