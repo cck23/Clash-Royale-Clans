@@ -3,20 +3,20 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
-        <sys_created_on>2018-10-17 09:48:12</sys_created_on>
+        <sys_created_on>2018-11-27 14:05:42</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>205362c0db51a7006a54f7fdbf961923</sys_id>
+        <sys_id>46676a59db8ea3006a54f7fdbf9619d5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_53373_royalapi_clan_member.x_53373_royalapi.clan_member_user</sys_name>
+        <sys_name>x_53373_royalapi_clan_member.snc_read_only</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_security_acl display_value="x_53373_royalapi_clan_member">285362c0db51a7006a54f7fdbf961920</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_205362c0db51a7006a54f7fdbf961923</sys_update_name>
+        <sys_update_name>sys_security_acl_role_46676a59db8ea3006a54f7fdbf9619d5</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-17 09:48:12</sys_updated_on>
-        <sys_user_role display_value="x_53373_royalapi.clan_member_user" name="x_53373_royalapi.clan_member_user">dc5322c0db51a7006a54f7fdbf961990</sys_user_role>
+        <sys_updated_on>2018-11-27 14:05:42</sys_updated_on>
+        <sys_user_role display_value="snc_read_only" name="snc_read_only">b52b6120bf0021003edbdd8c3f0739d4</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>

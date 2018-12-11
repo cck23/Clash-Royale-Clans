@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <default>false</default>
+        <homepage/>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <notfound_page/>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>chikwong.cheung</sys_created_by>
+        <sys_created_on>2018-11-27 13:25:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2d3e9215db8ea3006a54f7fdbf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cRoyale</sys_name>
+        <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
+        <sys_update_name>sp_portal_2d3e9215db8ea3006a54f7fdbf96190e</sys_update_name>
+        <sys_updated_by>chikwong.cheung</sys_updated_by>
+        <sys_updated_on>2018-11-27 13:25:52</sys_updated_on>
+        <theme/>
+        <title>cRoyale</title>
+        <url_suffix>croyale</url_suffix>
+    </sp_portal>
+</record_update>

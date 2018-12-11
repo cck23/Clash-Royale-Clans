@@ -4,7 +4,7 @@
         <active>true</active>
         <category>mid-server</category>
         <content><![CDATA[ <h1 class="title topictitle1">ECC queue</h1>  <div class="body conbody">  <p class="p"><span class="ph">The External Communication Channel (ECC) Queue is a      connection point between an instance and other systems that integrate with it, most commonly a      MID Server.</span>  </p>  <p class="p">The ECC queue contains records that are created during all stages        of discovery. Each record is essentially a message from the instance and another system,        classified as <span class="ph uicontrol">output</span>, or a message from the external system to the        instance, classified as <span class="ph uicontrol">input</span>. ECC queue records provide you with a        connected flow of probe and sensor activity, as well as the actual XML payload that is sent        to or from an instance.</p> </div> <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:ECCQueueAccess&amp;version&#61;jakarta" target="_blank" rel="nofollow">Access the ECC queue</a></div></div></div></div>]]></content>
-        <last_sync>2018-11-24 08:41:12</last_sync>
+        <last_sync>2018-12-09 08:41:13</last_sync>
         <modifier>normal</modifier>
         <name>ecc_queue_list-normal</name>
         <page>ecc_queue_list</page>
@@ -18,7 +18,7 @@
         <sys_created_on>2018-10-25 08:40:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f970a3a2db9dab006a54f7fdbf961967</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>ecc_queue_list-normal</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
@@ -26,7 +26,7 @@
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_embedded_help_content_f970a3a2db9dab006a54f7fdbf961967</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-11-24 08:41:12</sys_updated_on>
+        <sys_updated_on>2018-12-09 08:41:13</sys_updated_on>
         <version>j</version>
     </sys_embedded_help_content>
     <sys_translated_text action="delete_multiple" query="documentkey=f970a3a2db9dab006a54f7fdbf961967"/>

@@ -21,21 +21,22 @@ while ( allMembersGr.next()){
 }
 
 // New part to make single battle queries at a time
-for ( var thisCount in allMembersArray){
-	thisPlayerTag = allMembersArray[thisCount];
+//for ( var thisCount in allMembersArray){
+//	thisPlayerTag = allMembersArray[thisCount];
 
 
 
 
 var allPlayerTags = allMembersArray.join(",");
-gs.info("CCK:ScriptAction:Get All Battle Results: thisPlayerTag = " + thisPlayerTag);
+//gs.info("CCK:ScriptAction:Get All Battle Results: thisPlayerTag = " + thisPlayerTag);
+gs.info("CCK:ScriptAction:Get All Battle Results: allPlayerTags = " + allPlayerTags);
 
 
 try {
 	
 	var r = new sn_ws.RESTMessageV2('x_53373_royalapi.RoyalAPI', 'Player Battle GET');
-	//r.setStringParameterNoEscape('playerTag', allPlayerTags);
-	r.setStringParameterNoEscape('playerTag', thisPlayerTag);
+	r.setStringParameterNoEscape('playerTag', allPlayerTags);
+	//r.setStringParameterNoEscape('playerTag', thisPlayerTag);
 	
 	var response = r.execute();
 	var responseBody = response.getBody();
@@ -104,7 +105,7 @@ catch(ex) {
 	//var message = ex.getMessage();
 }
 	
-}
+//}
 
 
 
@@ -115,7 +116,10 @@ allMembersGr2.addActiveQuery();
 allMembersGr2.query();
 var battleTypes = [["clanWarCollectionDay","collection_day_win_rate"],["2v2","team_win_rate"],["PvP","pvp_win_rate"]];
 
+var sumGamesPlayed;
+
 while ( allMembersGr2.next()){
+	sumGamesPlayed = 0;
 	for ( var i in battleTypes){
 		var battleResult = new GlideRecord('x_53373_royalapi_player_battles');
 		battleResult.addEncodedQuery('tag=' + allMembersGr2.tag + '^type=' + battleTypes[i][0]);
@@ -127,6 +131,7 @@ while ( allMembersGr2.next()){
 		var losses = 0;
 		var draws = 0;
 		while ( battleResult.next()){
+			sumGamesPlayed = sumGamesPlayed + 1;
 			count = count + 1;
 			if ( battleResult.result.indexOf('Win') > -1 ){
 				wins = wins + 1;
@@ -138,9 +143,19 @@ while ( allMembersGr2.next()){
 		}
 		allMembersGr2[battleTypes[i][1]] = (count > 5) ? parseInt((wins/count)*100):0;
 		allMembersGr2.refreshed = new GlideDateTime();
+		allMembersGr2.game_count = sumGamesPlayed;
 		allMembersGr2.update();
 	}
+	var battleResult2 = new GlideRecord('x_53373_royalapi_player_battles');
+	battleResult2.addEncodedQuery('tag=' + allMembersGr2.tag + '^date_timeRELATIVEGE@dayofweek@ago@30');
+	battleResult2.query();
+	allMembersGr2.game_count = battleResult2.getRowCount();
+	allMembersGr2.update();
 }
+
+// Get player battle counts
+
+
 
 function isClanMember(tag,allMembersArray) {
    if ( allMembersArray.indexOf(tag) > -1){
@@ -218,7 +233,7 @@ function addBattleResult(epoch, battleDate, type, teamScore, opponentScore, play
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>edeb1a5adb15ab006a54f7fdbf961987</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name>Get All Battle Results</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -227,6 +242,6 @@ function addBattleResult(epoch, battleDate, type, teamScore, opponentScore, play
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sysevent_script_action_edeb1a5adb15ab006a54f7fdbf961987</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-11-22 10:57:46</sys_updated_on>
+        <sys_updated_on>2018-12-11 14:04:23</sys_updated_on>
     </sysevent_script_action>
 </record_update>
