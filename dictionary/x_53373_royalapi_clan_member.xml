@@ -3,6 +3,7 @@
     <element label="Clan Member" max_length="40" name="x_53373_royalapi_clan_member" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Collection Day Win Rate" max_length="40" name="collection_day_win_rate" type="integer"/>
+        <element label="Exclude From Activity Check" max_length="40" name="exclude" type="boolean"/>
         <element label="Game Count" max_length="40" name="game_count" type="integer"/>
         <element label="Name" max_length="40" name="name" type="string"/>
         <element label="PvP Win Rate" max_length="40" name="pvp_win_rate" type="integer"/>
