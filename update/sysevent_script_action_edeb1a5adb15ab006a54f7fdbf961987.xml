@@ -24,16 +24,12 @@ while ( allMembersGr.next()){
 //for ( var thisCount in allMembersArray){
 //	thisPlayerTag = allMembersArray[thisCount];
 
-
-
-
 var allPlayerTags = allMembersArray.join(",");
 //gs.info("CCK:ScriptAction:Get All Battle Results: thisPlayerTag = " + thisPlayerTag);
 gs.info("CCK:ScriptAction:Get All Battle Results: allPlayerTags = " + allPlayerTags);
 
 
 try {
-	
 	var r = new sn_ws.RESTMessageV2('x_53373_royalapi.RoyalAPI', 'Player Battle GET');
 	r.setStringParameterNoEscape('playerTag', allPlayerTags);
 	//r.setStringParameterNoEscape('playerTag', thisPlayerTag);
@@ -107,8 +103,6 @@ catch(ex) {
 	
 //}
 
-
-
 // Create Win Rates
 
 var allMembersGr2 = new GlideRecord('x_53373_royalapi_clan_member');
@@ -172,7 +166,6 @@ function addBattleResult(epoch, battleDate, type, teamScore, opponentScore, play
 	}
    
 	//gs.debug('epoch=' + epoch + '^tag=' + player1[1]);
-	//1540372548
 	var playerBattleGr = new GlideRecord('x_53373_royalapi_player_battles');
 	playerBattleGr.addEncodedQuery('epoch=' + epoch + '^tag=' + player1[1]);
 	playerBattleGr.query();
@@ -221,10 +214,7 @@ function addBattleResult(epoch, battleDate, type, teamScore, opponentScore, play
 		newResult.team_mate = teamMate;
 		newResult.insert();
    }
-	
-}
-
-]]></script>
+}]]></script>
         <synchronous>false</synchronous>
         <sys_class_name>sysevent_script_action</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
@@ -233,7 +223,7 @@ function addBattleResult(epoch, battleDate, type, teamScore, opponentScore, play
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>edeb1a5adb15ab006a54f7fdbf961987</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>Get All Battle Results</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -242,6 +232,6 @@ function addBattleResult(epoch, battleDate, type, teamScore, opponentScore, play
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sysevent_script_action_edeb1a5adb15ab006a54f7fdbf961987</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-12-11 14:04:23</sys_updated_on>
+        <sys_updated_on>2018-12-17 09:17:05</sys_updated_on>
     </sysevent_script_action>
 </record_update>

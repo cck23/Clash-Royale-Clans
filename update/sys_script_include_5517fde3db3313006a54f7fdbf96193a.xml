@@ -23,9 +23,6 @@ royaleAPIClanExtract.prototype = {
 			var gdt = new GlideDateTime();
 			var dayOfWeek = gdt.getDayOfWeekUTC() - 1;
 			gdt.addSeconds( -dayOfWeek * 86400);
-			
-			//var weekBeginning = new GlideDateTime();
-			//weekBeginning.setValue(gdt.getValue().split(' ')[0] +  " 00:00:00");
 			weekBeginning = gdt.getValue().split(' ')[0];
 			
 			var response = r.execute();
@@ -37,6 +34,44 @@ royaleAPIClanExtract.prototype = {
 				var responseJSON = JSON.parse(responseBody);
 				var members = responseJSON.members;
 				gs.info("CCK:SI:royaleAPIClanExtract: members = " + members.length);
+				
+				// Create the clan record if needed
+				// clan.tag=qwerty^date=weekBeginning
+				var clanTag = responseJSON.tag;
+				var clanName = responseJSON.name;
+				// Check clan record exists
+				var clanGr = new GlideRecord('x_53373_royalapi_clan');
+				clanGr.addEncodedQuery('tag=' + clanTag);
+				clanGr.query();
+				var clanSysID = '';
+				if ( ! clanGr.next()){
+					// Create Clan record
+					var newClanGr = new GlideRecord('x_53373_royalapi_clan');
+					newClanGr.name = clanName;
+					newClanGr.tag = clanTag;
+					clanSysID = newClanGr.insert();
+				} else {
+					clanSysID = clanGr.sys_id;
+				}
+				
+				// Update the clan history record
+				var clanHistoryGr = new GlideRecord('x_53373_royalapi_clan_history');
+				clanHistoryGr.addEncodedQuery('clan.tag=' + clanTag + '^date=' + weekBeginning);
+				clanHistoryGr.query();
+				if ( clanHistoryGr.next()){
+					//update
+					clanHistoryGr.donations = responseJSON.donations;
+					clanHistoryGr.update();
+				} else {
+					//insert
+					var newClanHistoryGr = new GlideRecord('x_53373_royalapi_clan_history');
+					newClanHistoryGr.date = weekBeginning;
+					// Get the SysId of the clan
+					newClanHistoryGr.clan = clanSysID;
+					newClanHistoryGr.donations = responseJSON.donations;
+					newClanHistoryGr.insert();
+				}
+				
 				for ( var i = 0 ; i < members.length ; i++ ) {
 					
 					// Create an array of current members
@@ -214,7 +249,7 @@ royaleAPIClanExtract.prototype = {
         <sys_created_on>2018-08-14 14:00:10</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5517fde3db3313006a54f7fdbf96193a</sys_id>
-        <sys_mod_count>124</sys_mod_count>
+        <sys_mod_count>130</sys_mod_count>
         <sys_name>royaleAPIClanExtract</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy>read</sys_policy>
@@ -222,6 +257,6 @@ royaleAPIClanExtract.prototype = {
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_script_include_5517fde3db3313006a54f7fdbf96193a</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-12-16 16:32:03</sys_updated_on>
+        <sys_updated_on>2018-12-17 09:54:07</sys_updated_on>
     </sys_script_include>
 </record_update>

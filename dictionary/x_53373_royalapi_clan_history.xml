@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Clan History" max_length="40" name="x_53373_royalapi_clan_history" type="collection">
+        <element label="Clan" max_length="32" name="clan" reference="x_53373_royalapi_clan" type="reference"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Donations" max_length="40" name="donations" type="integer"/>
+        <index name="index">
+            <element name="clan"/>
+        </index>
+    </element>
+</database>
