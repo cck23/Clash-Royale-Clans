@@ -14,9 +14,11 @@
         <run_time>1970-01-01 00:05:00</run_time>
         <run_type>periodically</run_type>
         <script><![CDATA[var si = new x_53373_royalapi.royaleAPIClanExtract();
-si.get();
-si.getClanWarLog();
-si.deactivateOldMembers();
+// Hong Kong Boyz = 28C2Q
+// Grand Goblins = V2GCC8Y
+si.get('V2GCC8Y');
+si.getClanWarLog('V2GCC8Y');
+si.deactivateOldMembers('V2GCC8Y');
 
 gs.eventQueue("x_53373_royalapi.battle.results", '', '', '');
 ]]></script>
@@ -25,7 +27,7 @@ gs.eventQueue("x_53373_royalapi.battle.results", '', '', '');
         <sys_created_on>2018-10-16 12:01:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4f08bdb3db0967006a54f7fdbf9619f9</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Extract RoyaleAPI data</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
@@ -33,7 +35,7 @@ gs.eventQueue("x_53373_royalapi.battle.results", '', '', '');
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sysauto_script_4f08bdb3db0967006a54f7fdbf9619f9</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-12-11 14:05:49</sys_updated_on>
+        <sys_updated_on>2018-12-19 14:35:54</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

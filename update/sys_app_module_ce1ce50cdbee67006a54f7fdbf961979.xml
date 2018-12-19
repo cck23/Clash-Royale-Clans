@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application/>
+        <application display_value="Royale API">b919ad73dbf713006a54f7fdbf9619a2</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -10,37 +10,37 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>DIRECT</link_type>
         <map_page/>
-        <mobile_title>Clan Members</mobile_title>
+        <mobile_title>Dashboard</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_53373_royalapi_clan_members</name>
-        <order/>
+        <name/>
+        <order>50</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>/croyale?id=crclan</query>
         <report/>
-        <roles>x_53373_royalapi.clan_members_user</roles>
+        <roles/>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
-        <sys_created_on>2018-08-14 14:32:36</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_created_on>2018-12-18 09:05:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>baaef9e7db3313006a54f7fdbf961962</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Clan Members</sys_name>
+        <sys_id>ce1ce50cdbee67006a54f7fdbf961979</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
-        <sys_update_name>sys_app_module_baaef9e7db3313006a54f7fdbf961962</sys_update_name>
+        <sys_update_name>sys_app_module_ce1ce50cdbee67006a54f7fdbf961979</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-08-14 14:32:36</sys_updated_on>
+        <sys_updated_on>2018-12-18 09:09:46</sys_updated_on>
         <timeline_page/>
-        <title>Clan Members</title>
+        <title>Dashboard</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Clan Donations" max_length="40" name="x_53373_royalapi_clan_donations" type="collection">
+        <element label="Clan Tag" max_length="32" name="clan_tag" reference="x_53373_royalapi_clan" type="reference"/>
         <element label="Donations" max_length="40" name="donations" type="integer"/>
         <element label="Donations Received" max_length="40" name="donations_received" type="integer"/>
         <element label="Name" max_length="32" name="name" reference="x_53373_royalapi_clan_member" type="reference"/>
         <element label="Week Beginning" max_length="40" name="week_beginning" type="glide_date"/>
         <index name="index">
+            <element name="clan_tag"/>
+        </index>
+        <index name="index2">
             <element name="name"/>
         </index>
     </element>

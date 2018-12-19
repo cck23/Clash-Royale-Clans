@@ -113,6 +113,20 @@
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>clan</element>
+            <position>8</position>
+            <sys_created_by>chikwong.cheung</sys_created_by>
+            <sys_created_on>2018-12-19 14:19:50</sys_created_on>
+            <sys_id>79ad7f18dbe623006a54f7fdbf961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_war_trophies" sys_domain="global" view="Default view">2488ab15db0023006a54f7fdbf961940</sys_ui_section>
+            <sys_updated_by>chikwong.cheung</sys_updated_by>
+            <sys_updated_on>2018-12-19 14:19:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

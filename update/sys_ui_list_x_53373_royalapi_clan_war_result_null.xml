@@ -4,122 +4,137 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>clan_war_date</element>
-            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0bf3e304dbd1a7006a54f7fdbf9619c6</list_id>
+            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f67cb318dbe623006a54f7fdbf9619b9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:30:43</sys_created_on>
-            <sys_id>83f3e304dbd1a7006a54f7fdbf9619c7</sys_id>
+            <sys_created_on>2018-12-19 14:14:43</sys_created_on>
+            <sys_id>7e7cb318dbe623006a54f7fdbf9619b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:30:43</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:14:43</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0bf3e304dbd1a7006a54f7fdbf9619c6</list_id>
+            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f67cb318dbe623006a54f7fdbf9619b9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:30:43</sys_created_on>
-            <sys_id>0bf3e304dbd1a7006a54f7fdbf9619c7</sys_id>
+            <sys_created_on>2018-12-19 14:14:43</sys_created_on>
+            <sys_id>fe7cb318dbe623006a54f7fdbf9619b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:30:43</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:14:43</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name.tag</element>
-            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0bf3e304dbd1a7006a54f7fdbf9619c6</list_id>
+            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f67cb318dbe623006a54f7fdbf9619b9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:30:43</sys_created_on>
-            <sys_id>8bf3e304dbd1a7006a54f7fdbf9619c7</sys_id>
+            <sys_created_on>2018-12-19 14:14:43</sys_created_on>
+            <sys_id>727cb318dbe623006a54f7fdbf9619ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:30:43</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:14:43</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>battles_played</element>
-            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0bf3e304dbd1a7006a54f7fdbf9619c6</list_id>
+            <element>clan</element>
+            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f67cb318dbe623006a54f7fdbf9619b9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:30:43</sys_created_on>
-            <sys_id>0ff3e304dbd1a7006a54f7fdbf9619c7</sys_id>
+            <sys_created_on>2018-12-19 14:14:43</sys_created_on>
+            <sys_id>f27cb318dbe623006a54f7fdbf9619ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:30:43</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:14:43</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>cards_earned</element>
-            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0bf3e304dbd1a7006a54f7fdbf9619c6</list_id>
+            <element>battles_played</element>
+            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f67cb318dbe623006a54f7fdbf9619b9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:30:43</sys_created_on>
-            <sys_id>8ff3e304dbd1a7006a54f7fdbf9619c7</sys_id>
+            <sys_created_on>2018-12-19 14:14:43</sys_created_on>
+            <sys_id>767cb318dbe623006a54f7fdbf9619ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:30:43</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:14:43</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>wins</element>
-            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0bf3e304dbd1a7006a54f7fdbf9619c6</list_id>
+            <element>cards_earned</element>
+            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f67cb318dbe623006a54f7fdbf9619b9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:30:43</sys_created_on>
-            <sys_id>03f3e304dbd1a7006a54f7fdbf9619c8</sys_id>
+            <sys_created_on>2018-12-19 14:14:43</sys_created_on>
+            <sys_id>f67cb318dbe623006a54f7fdbf9619ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:30:43</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:14:43</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>win_rate</element>
-            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0bf3e304dbd1a7006a54f7fdbf9619c6</list_id>
+            <element>wins</element>
+            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f67cb318dbe623006a54f7fdbf9619b9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:30:43</sys_created_on>
-            <sys_id>83f3e304dbd1a7006a54f7fdbf9619c8</sys_id>
+            <sys_created_on>2018-12-19 14:14:43</sys_created_on>
+            <sys_id>7a7cb318dbe623006a54f7fdbf9619ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:30:43</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:14:43</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>recent_clan_war_activity</element>
-            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0bf3e304dbd1a7006a54f7fdbf9619c6</list_id>
+            <element>win_rate</element>
+            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f67cb318dbe623006a54f7fdbf9619b9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:30:43</sys_created_on>
-            <sys_id>07f3e304dbd1a7006a54f7fdbf9619c8</sys_id>
+            <sys_created_on>2018-12-19 14:14:43</sys_created_on>
+            <sys_id>fa7cb318dbe623006a54f7fdbf9619ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:30:43</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:14:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>recent_clan_war_activity</element>
+            <list_id display_value="x_53373_royalapi_clan_war_result" element="NULL" name="x_53373_royalapi_clan_war_result" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f67cb318dbe623006a54f7fdbf9619b9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>chikwong.cheung</sys_created_by>
+            <sys_created_on>2018-12-19 14:14:43</sys_created_on>
+            <sys_id>7e7cb318dbe623006a54f7fdbf9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chikwong.cheung</sys_updated_by>
+            <sys_updated_on>2018-12-19 14:14:43</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -133,11 +148,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:30:43</sys_created_on>
+            <sys_created_on>2018-12-19 14:14:43</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>0bf3e304dbd1a7006a54f7fdbf9619c6</sys_id>
+            <sys_id>f67cb318dbe623006a54f7fdbf9619b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_53373_royalapi_clan_war_result</sys_name>
             <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -146,7 +161,7 @@
             <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
             <sys_update_name>sys_ui_list_x_53373_royalapi_clan_war_result_null</sys_update_name>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:30:43</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:14:43</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
