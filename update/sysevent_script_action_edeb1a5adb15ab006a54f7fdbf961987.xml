@@ -9,9 +9,12 @@
         <order>100</order>
         <script><![CDATA[// Get all members
 var allMembersArray = [];
+gs.info("CCK:ScriptAction:Get All Battle Results:start");
 
 var allMembersGr = new GlideRecord('x_53373_royalapi_clan_member');
 allMembersGr.addActiveQuery();
+// active=true^clan.tag=V2GCC8Y
+allMembersGr.addQuery('clan.tag=' + event.parm1);
 allMembersGr.query();
 var tagToSysId = {};
 
@@ -19,7 +22,7 @@ while ( allMembersGr.next()){
 	allMembersArray.push(allMembersGr.tag.toString());
 	tagToSysId[allMembersGr.tag.toString()] = allMembersGr.sys_id.toString();
 }
-
+gs.info("CCK:ScriptAction:Get All Battle Results:5");
 // New part to make single battle queries at a time
 //for ( var thisCount in allMembersArray){
 //	thisPlayerTag = allMembersArray[thisCount];
@@ -223,7 +226,7 @@ function addBattleResult(epoch, battleDate, type, teamScore, opponentScore, play
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>edeb1a5adb15ab006a54f7fdbf961987</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>Get All Battle Results</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -232,6 +235,6 @@ function addBattleResult(epoch, battleDate, type, teamScore, opponentScore, play
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sysevent_script_action_edeb1a5adb15ab006a54f7fdbf961987</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-12-17 09:17:05</sys_updated_on>
+        <sys_updated_on>2018-12-19 16:02:27</sys_updated_on>
     </sysevent_script_action>
 </record_update>

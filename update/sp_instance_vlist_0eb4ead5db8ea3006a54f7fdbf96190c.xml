@@ -7,8 +7,9 @@
         <css/>
         <display_field>name</display_field>
         <field_list/>
-        <filter table="x_53373_royalapi_clan_member">active=true^ORDERBYDESCteam_win_rate<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <filter table="x_53373_royalapi_clan_member">active=true^ORDERBYDESCteam_win_rate^clan.tag=V2GCC8Y<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBYDESC" or="false" value="team_win_rate"/>
+            <item endquery="false" field="clan.tag" goto="false" newquery="false" operator="=" or="false" value="V2GCC8Y"/>
         </filter>
         <glyph/>
         <id/>
@@ -27,7 +28,7 @@
         <sys_created_on>2018-11-27 13:53:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0eb4ead5db8ea3006a54f7fdbf96190c</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
@@ -35,7 +36,7 @@
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sp_instance_vlist_0eb4ead5db8ea3006a54f7fdbf96190c</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-11-27 14:53:03</sys_updated_on>
+        <sys_updated_on>2018-12-19 16:27:22</sys_updated_on>
         <table>x_53373_royalapi_clan_member</table>
         <title/>
         <url/>

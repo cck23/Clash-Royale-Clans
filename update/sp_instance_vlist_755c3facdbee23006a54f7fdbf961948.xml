@@ -3,18 +3,16 @@
     <sp_instance_vlist action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>
-        <color>primary</color>
+        <color>default</color>
         <css/>
         <display_field>name</display_field>
         <field_list/>
-        <filter table="x_53373_royalapi_clan_war_result">battles_played=0^ORbattles_played=NULL^clan_war_dateRELATIVEGE@dayofweek@ago@28^name.active=true^ORDERBYDESCcreated_date^clan.tag=V2GCC8Y<item endquery="false" field="battles_played" goto="false" newquery="false" operator="=" or="false" value="0"/>
-            <item endquery="false" field="battles_played" goto="false" newquery="false" operator="=" or="true" value="NULL"/>
-            <item endquery="false" field="clan_war_date" goto="false" newquery="false" operator="RELATIVE" or="false" value="GE@dayofweek@ago@28"/>
-            <item endquery="false" field="name.active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBYDESC" or="false" value="created_date"/>
-            <item endquery="false" field="clan.tag" goto="false" newquery="false" operator="=" or="false" value="V2GCC8Y"/>
+        <filter table="x_53373_royalapi_clan_member">active=true^ORDERBYDESCgame_count^game_count!=0^clan.tag=28C2Q<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBYDESC" or="false" value="game_count"/>
+            <item endquery="false" field="game_count" goto="false" newquery="false" operator="!=" or="false" value="0"/>
+            <item endquery="false" field="clan.tag" goto="false" newquery="false" operator="=" or="false" value="28C2Q"/>
         </filter>
-        <glyph>empty</glyph>
+        <glyph/>
         <id/>
         <maximum_entries>15</maximum_entries>
         <order>1</order>
@@ -23,24 +21,24 @@
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">ba5c5a91db8ea3006a54f7fdbf9619b1</sp_column>
+        <sp_column display_value="1">aa4cfbacdbee23006a54f7fdbf961943</sp_column>
         <sp_page/>
         <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
         <sys_class_name>sp_instance_vlist</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
-        <sys_created_on>2018-11-27 13:17:24</sys_created_on>
+        <sys_created_on>2018-12-20 08:52:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>306c1291db8ea3006a54f7fdbf9619c8</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_id>755c3facdbee23006a54f7fdbf961948</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
-        <sys_update_name>sp_instance_vlist_306c1291db8ea3006a54f7fdbf9619c8</sys_update_name>
+        <sys_update_name>sp_instance_vlist_755c3facdbee23006a54f7fdbf961948</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-12-19 16:28:06</sys_updated_on>
-        <table>x_53373_royalapi_clan_war_result</table>
+        <sys_updated_on>2018-12-20 08:54:16</sys_updated_on>
+        <table>x_53373_royalapi_clan_member</table>
         <title/>
         <url/>
         <widget_parameters><![CDATA[{
@@ -57,8 +55,8 @@
 		"displayValue": ""
 	},
 	"secondary_fields": {
-		"value": "clan_war_date",
-		"displayValue": "clan_war_date"
+		"value": "game_count",
+		"displayValue": "game_count"
 	},
 	"rounded_images": {
 		"value": "",
