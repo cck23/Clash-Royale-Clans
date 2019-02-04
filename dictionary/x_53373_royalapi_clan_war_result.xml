@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Clan War Result" max_length="40" name="x_53373_royalapi_clan_war_result" sizeclass="162919" type="collection">
+    <element label="Clan War Result" max_length="40" name="x_53373_royalapi_clan_war_result" type="collection">
         <element label="Battles Played" max_length="40" name="battles_played" type="integer"/>
         <element label="Cards Earned" max_length="40" name="cards_earned" type="integer"/>
         <element label="Clan" max_length="32" name="clan" reference="x_53373_royalapi_clan" type="reference"/>

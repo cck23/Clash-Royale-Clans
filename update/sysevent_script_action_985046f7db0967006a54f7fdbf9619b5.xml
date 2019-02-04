@@ -182,7 +182,6 @@ catch(ex) {
         <sys_class_name>sysevent_script_action</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
         <sys_created_on>2018-10-16 12:37:34</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>985046f7db0967006a54f7fdbf9619b5</sys_id>
@@ -191,7 +190,6 @@ catch(ex) {
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sysevent_script_action_985046f7db0967006a54f7fdbf9619b5</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>

@@ -5,13 +5,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 13:59:39</sys_created_on>
-            <sys_id>8a435a73db4967006a54f7fdbf961980</sys_id>
+            <sys_created_on>2019-02-04 09:24:09</sys_created_on>
+            <sys_id>09bcf02bdb13a30096877de03c961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 13:59:39</sys_updated_on>
+            <sys_updated_on>2019-02-04 09:24:09</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -19,153 +19,111 @@
             <element>date_time</element>
             <position>1</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 13:59:39</sys_created_on>
-            <sys_id>02435a73db4967006a54f7fdbf961981</sys_id>
+            <sys_created_on>2019-02-04 09:24:09</sys_created_on>
+            <sys_id>cdbcf02bdb13a30096877de03c961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 13:59:39</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>epoch</element>
-            <position>2</position>
-            <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 13:59:39</sys_created_on>
-            <sys_id>82435a73db4967006a54f7fdbf961981</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
-            <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 13:59:39</sys_updated_on>
+            <sys_updated_on>2019-02-04 09:24:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>result</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 13:59:39</sys_created_on>
-            <sys_id>06435a73db4967006a54f7fdbf961981</sys_id>
+            <sys_created_on>2019-02-04 09:24:09</sys_created_on>
+            <sys_id>41bcf02bdb13a30096877de03c961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 13:59:39</sys_updated_on>
+            <sys_updated_on>2019-02-04 09:24:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 13:59:39</sys_created_on>
-            <sys_id>86435a73db4967006a54f7fdbf961981</sys_id>
+            <sys_created_on>2019-02-04 09:24:09</sys_created_on>
+            <sys_id>c1bcf02bdb13a30096877de03c961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 13:59:39</sys_updated_on>
+            <sys_updated_on>2019-02-04 09:24:09</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>tag</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 13:59:39</sys_created_on>
-            <sys_id>0a435a73db4967006a54f7fdbf961981</sys_id>
+            <sys_created_on>2019-02-04 09:24:09</sys_created_on>
+            <sys_id>45bcf02bdb13a30096877de03c961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 13:59:39</sys_updated_on>
+            <sys_updated_on>2019-02-04 09:24:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>type</element>
-            <position>6</position>
+            <position>5</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 13:59:39</sys_created_on>
-            <sys_id>8a435a73db4967006a54f7fdbf961981</sys_id>
+            <sys_created_on>2019-02-04 09:24:09</sys_created_on>
+            <sys_id>c5bcf02bdb13a30096877de03c961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 13:59:39</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>player_name</element>
-            <position>7</position>
-            <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 13:59:39</sys_created_on>
-            <sys_id>0e435a73db4967006a54f7fdbf961981</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
-            <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 13:59:39</sys_updated_on>
+            <sys_updated_on>2019-02-04 09:24:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>8</position>
+            <position>6</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-16 13:59:39</sys_created_on>
-            <sys_id>8e435a73db4967006a54f7fdbf961981</sys_id>
+            <sys_created_on>2019-02-04 09:24:09</sys_created_on>
+            <sys_id>49bcf02bdb13a30096877de03c961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-16 13:59:39</sys_updated_on>
+            <sys_updated_on>2019-02-04 09:24:09</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>old_name</element>
-            <position>9</position>
-            <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:37:06</sys_created_on>
-            <sys_id>5075a344dbd1a7006a54f7fdbf961923</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
-            <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:37:06</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
-            <position>10</position>
+            <position>7</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-17 14:41:37</sys_created_on>
-            <sys_id>3e76eb44dbd1a7006a54f7fdbf9619e9</sys_id>
+            <sys_created_on>2019-02-04 09:24:09</sys_created_on>
+            <sys_id>c9bcf02bdb13a30096877de03c961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-17 14:41:37</sys_updated_on>
+            <sys_updated_on>2019-02-04 09:24:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>team_mate</element>
-            <position>11</position>
+            <position>8</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2018-10-24 08:43:07</sys_created_on>
-            <sys_id>a78712d6db15ab006a54f7fdbf9619a7</sys_id>
+            <sys_created_on>2019-02-04 09:24:09</sys_created_on>
+            <sys_id>4dbcf02bdb13a30096877de03c961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_player_battles" sys_domain="global" view="Default view">82435a73db4967006a54f7fdbf96197c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2018-10-24 08:43:07</sys_updated_on>
+            <sys_updated_on>2019-02-04 09:24:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -177,7 +135,6 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>chikwong.cheung</sys_created_by>
             <sys_created_on>2018-10-16 13:59:38</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>82435a73db4967006a54f7fdbf96197c</sys_id>
@@ -186,7 +143,6 @@
             <sys_overrides/>
             <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
             <sys_policy/>
-            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
             <sys_update_name>sys_ui_section_82435a73db4967006a54f7fdbf96197c</sys_update_name>
             <sys_updated_by>chikwong.cheung</sys_updated_by>

@@ -17,13 +17,11 @@
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-14 18:57:35</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
         <sys_id>b02bfa27dbb313006a54f7fdbf9619d4</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Warlog GET</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_rest_message_fn_b02bfa27dbb313006a54f7fdbf9619d4</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>

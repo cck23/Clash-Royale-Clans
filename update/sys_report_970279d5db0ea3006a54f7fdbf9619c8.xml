@@ -3,6 +3,7 @@
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
+        <allow_data_label_overlap>false</allow_data_label_overlap>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
@@ -24,9 +25,10 @@
         <column>sys_created_on</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="Chi-Kwong Cheung">82f33ab1db2322006a54f7fdbf96194f</created_by_user>
+        <created_by_user display_value="">82f33ab1db2322006a54f7fdbf96194f</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
+        <custom_config/>
         <decimal_precision>2</decimal_precision>
         <description/>
         <direction>minimize</direction>
@@ -34,6 +36,7 @@
         <display_grid>false</display_grid>
         <display_row_lines>false</display_row_lines>
         <donut_width_percent>50</donut_width_percent>
+        <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list/>
@@ -73,28 +76,30 @@
         <sc_stackby_item_id/>
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
+        <series_name_text/>
         <set_color>one_color</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>false</show_chart_total>
+        <show_data_label_position_middle>false</show_data_label_position_middle>
         <show_empty>false</show_empty>
         <show_geographical_label>false</show_geographical_label>
         <show_legend>true</show_legend>
         <show_legend_border>false</show_legend_border>
         <show_marker>true</show_marker>
         <show_zero>false</show_zero>
+        <source_type/>
+        <start_time/>
         <sumfield>epoch</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
         <sys_created_on>2018-11-27 10:12:25</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>970279d5db0ea3006a54f7fdbf9619c8</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Activity</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_report_970279d5db0ea3006a54f7fdbf9619c8</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
@@ -108,7 +113,6 @@
         <type>trend</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
-        <use_color_palette>false</use_color_palette>
         <user>82f33ab1db2322006a54f7fdbf96194f</user>
         <x_axis_display_grid>false</x_axis_display_grid>
         <x_axis_grid_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</x_axis_grid_color>
