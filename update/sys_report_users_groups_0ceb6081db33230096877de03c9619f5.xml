@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Clan War Victories">84eb6081db33230096877de03c9619f5</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>chikwong.cheung</sys_created_by>
+        <sys_created_on>2019-02-21 10:17:13</sys_created_on>
+        <sys_id>0ceb6081db33230096877de03c9619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>84eb6081db33230096877de03c9619f5</sys_name>
+        <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
+        <sys_update_name>sys_report_users_groups_0ceb6081db33230096877de03c9619f5</sys_update_name>
+        <sys_updated_by>chikwong.cheung</sys_updated_by>
+        <sys_updated_on>2019-02-21 10:17:13</sys_updated_on>
+        <user_id display_value="Chi-Kwong Cheung">05bdab87db57630096877de03c961944</user_id>
+    </sys_report_users_groups>
+</record_update>

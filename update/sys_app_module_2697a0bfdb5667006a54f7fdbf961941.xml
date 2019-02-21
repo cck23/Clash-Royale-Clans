@@ -15,7 +15,7 @@
         <mobile_title>Clan Donation History</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_53373_royalapi_clan_history</name>
-        <order>700</order>
+        <order>800</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2697a0bfdb5667006a54f7fdbf961941</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Clan Donation History</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_app_module_2697a0bfdb5667006a54f7fdbf961941</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-12-17 09:28:10</sys_updated_on>
+        <sys_updated_on>2019-02-21 10:19:00</sys_updated_on>
         <timeline_page/>
         <title>Clan Donation History</title>
         <uncancelable>false</uncancelable>

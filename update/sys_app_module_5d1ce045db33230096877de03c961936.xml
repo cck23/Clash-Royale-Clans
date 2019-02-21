@@ -6,39 +6,37 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="sys_script_fix">name=RoyaleAPI^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="=" or="false" value="RoyaleAPI"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter>
+        <filter/>
         <hint/>
         <homepage/>
         <image/>
-        <link_type>DETAIL</link_type>
+        <link_type>REPORT</link_type>
         <map_page/>
-        <mobile_title>Data Extract</mobile_title>
+        <mobile_title>Clan War Winners (1 mnth)</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>sys_script_fix</name>
-        <order>100</order>
+        <name/>
+        <order>700</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
-        <report/>
-        <roles>admin</roles>
+        <report display_value="Clan War Victories">84eb6081db33230096877de03c9619f5</report>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
-        <sys_created_on>2018-08-15 07:41:50</sys_created_on>
+        <sys_created_on>2019-02-21 10:18:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>30f965b3dbf713006a54f7fdbf96193c</sys_id>
+        <sys_id>5d1ce045db33230096877de03c961936</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Data Extract</sys_name>
+        <sys_name>Clan War Winners (1 mnth)</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
-        <sys_update_name>sys_app_module_30f965b3dbf713006a54f7fdbf96193c</sys_update_name>
+        <sys_update_name>sys_app_module_5d1ce045db33230096877de03c961936</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-22 09:55:40</sys_updated_on>
+        <sys_updated_on>2019-02-21 10:19:02</sys_updated_on>
         <timeline_page/>
-        <title>Data Extract</title>
+        <title>Clan War Winners (1 mnth)</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

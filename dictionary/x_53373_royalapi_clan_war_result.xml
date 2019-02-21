@@ -5,7 +5,7 @@
         <element label="Cards Earned" max_length="40" name="cards_earned" type="integer"/>
         <element label="Clan" max_length="32" name="clan" reference="x_53373_royalapi_clan" type="reference"/>
         <element label="Clan War Date" max_length="40" name="clan_war_date" type="glide_date_time"/>
-        <element label="Created Date" max_length="40" name="created_date" type="integer"/>
+        <element label="Created Date" max_length="40" name="created_date" read_only="true" type="integer"/>
         <element label="Name" max_length="32" name="name" reference="x_53373_royalapi_clan_member" type="reference"/>
         <element label="Recent Clan War Activity" max_length="40" name="recent_clan_war_activity" type="string"/>
         <element label="Wins" max_length="40" name="wins" type="integer"/>
