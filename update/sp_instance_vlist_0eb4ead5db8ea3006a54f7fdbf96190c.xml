@@ -14,27 +14,27 @@
         <glyph/>
         <id/>
         <maximum_entries>5</maximum_entries>
-        <order>1</order>
+        <order>2</order>
         <order_by/>
         <order_direction>asc</order_direction>
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">cb942e95db8ea3006a54f7fdbf9619e7</sp_column>
+        <sp_column display_value="1">d016e692db33230096877de03c961970</sp_column>
         <sp_page/>
         <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
         <sys_class_name>sp_instance_vlist</sys_class_name>
         <sys_created_by>chikwong.cheung</sys_created_by>
         <sys_created_on>2018-11-27 13:53:47</sys_created_on>
         <sys_id>0eb4ead5db8ea3006a54f7fdbf96190c</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sp_instance_vlist_0eb4ead5db8ea3006a54f7fdbf96190c</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-12-19 16:27:22</sys_updated_on>
+        <sys_updated_on>2019-02-25 16:23:47</sys_updated_on>
         <table>x_53373_royalapi_clan_member</table>
         <title/>
         <url/>

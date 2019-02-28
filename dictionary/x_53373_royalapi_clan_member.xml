@@ -3,7 +3,11 @@
     <element label="Clan Member" max_length="40" name="x_53373_royalapi_clan_member" type="collection">
         <element default="true" label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
         <element label="Clan" max_length="32" name="clan" read_only="true" reference="x_53373_royalapi_clan" type="reference"/>
-        <element label="Collection Day Win Rate" max_length="40" name="collection_day_win_rate" read_only="true" type="integer"/>
+        <element label="Clan War Battles Played" max_length="40" name="clan_war_battles_played" read_only="true" type="integer"/>
+        <element label="Clan War Battles Won" max_length="40" name="clan_war_battles_won" read_only="true" type="integer"/>
+        <element label="Clan War Cards Collected" max_length="40" name="clan_war_cards_collected" read_only="true" type="integer"/>
+        <element label="Clan War Final Win Rate" max_length="40" name="clan_war_final_win_rate" read_only="true" type="percent_complete"/>
+        <element label="Collection Day Win Rate" max_length="40" name="collection_day_win_rate" read_only="true" type="percent_complete"/>
         <element label="Exclude From Activity Check" max_length="40" name="exclude" type="boolean"/>
         <element label="Game Count" max_length="40" name="game_count" read_only="true" type="integer"/>
         <element label="Name" max_length="40" name="name" read_only="true" type="string"/>

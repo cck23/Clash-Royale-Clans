@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="collection_day_win_rate" label="Collection Day Win Rate" language="en" table="x_53373_royalapi_clan_member">
+    <sys_documentation element="clan_war_battles_won" label="Clan War Battles Won" language="en" table="x_53373_royalapi_clan_member">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>collection_day_win_rate</element>
+            <element>clan_war_battles_won</element>
             <help/>
             <hint/>
-            <label>Collection Day Win Rate</label>
+            <label>Clan War Battles Won</label>
             <language>en</language>
             <name>x_53373_royalapi_clan_member</name>
-            <plural>Collection Day Win Rates</plural>
+            <plural>Clan War Battles Wons</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:03:40</sys_created_on>
-            <sys_id>a5d26d53db33a30096877de03c961988</sys_id>
+            <sys_created_on>2019-02-28 14:09:09</sys_created_on>
+            <sys_id>2d146d93db33a30096877de03c961986</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Collection Day Win Rate</sys_name>
+            <sys_name>Clan War Battles Won</sys_name>
             <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
             <sys_policy/>
             <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
-            <sys_update_name>sys_documentation_x_53373_royalapi_clan_member_collection_day_win_rate_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_53373_royalapi_clan_member_clan_war_battles_won_en</sys_update_name>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:03:40</sys_updated_on>
+            <sys_updated_on>2019-02-28 14:09:09</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
