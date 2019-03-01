@@ -6,7 +6,8 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_53373_royalapi_clan_member">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <filter table="x_53373_royalapi_clan_member">active=true^clan=2bc80729db13230096877de03c961957^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item display_table="x_53373_royalapi_clan" display_value="Grand Goblins" endquery="false" field="clan" goto="false" newquery="false" operator="=" or="false" value="2bc80729db13230096877de03c961957"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -28,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5e5ae973dbf713006a54f7fdbf96194d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Members</sys_name>
         <sys_overrides/>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -36,7 +37,7 @@
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_app_module_5e5ae973dbf713006a54f7fdbf96194d</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-10-31 09:04:59</sys_updated_on>
+        <sys_updated_on>2019-03-01 10:08:13</sys_updated_on>
         <timeline_page/>
         <title>Members</title>
         <uncancelable>false</uncancelable>
