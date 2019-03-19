@@ -4,137 +4,137 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef456dd3db33a30096877de03c9619b3</list_id>
+            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7aa44a2fdb33230096877de03c9619af</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:14:27</sys_created_on>
-            <sys_id>67456dd3db33a30096877de03c9619b4</sys_id>
+            <sys_created_on>2019-03-01 11:09:59</sys_created_on>
+            <sys_id>76a44a2fdb33230096877de03c9619b0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:14:27</sys_updated_on>
+            <sys_updated_on>2019-03-01 11:09:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>clan</element>
-            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef456dd3db33a30096877de03c9619b3</list_id>
+            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7aa44a2fdb33230096877de03c9619af</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:14:27</sys_created_on>
-            <sys_id>e7456dd3db33a30096877de03c9619b4</sys_id>
+            <sys_created_on>2019-03-01 11:09:59</sys_created_on>
+            <sys_id>3ea44a2fdb33230096877de03c9619b0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:14:27</sys_updated_on>
+            <sys_updated_on>2019-03-01 11:09:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>refreshed</element>
-            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef456dd3db33a30096877de03c9619b3</list_id>
+            <element>pvp_win_rate</element>
+            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7aa44a2fdb33230096877de03c9619af</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:14:27</sys_created_on>
-            <sys_id>6b456dd3db33a30096877de03c9619b4</sys_id>
+            <sys_created_on>2019-03-01 11:09:59</sys_created_on>
+            <sys_id>bea44a2fdb33230096877de03c9619b0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:14:27</sys_updated_on>
+            <sys_updated_on>2019-03-01 11:09:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>pvp_win_rate</element>
-            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef456dd3db33a30096877de03c9619b3</list_id>
+            <element>clan_war_cards_collected</element>
+            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7aa44a2fdb33230096877de03c9619af</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:14:27</sys_created_on>
-            <sys_id>eb456dd3db33a30096877de03c9619b4</sys_id>
+            <sys_created_on>2019-03-01 11:09:59</sys_created_on>
+            <sys_id>32a44a2fdb33230096877de03c9619b1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:14:27</sys_updated_on>
+            <sys_updated_on>2019-03-01 11:09:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>clan_war_cards_collected</element>
-            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef456dd3db33a30096877de03c9619b3</list_id>
+            <element>clan_war_battles_played</element>
+            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7aa44a2fdb33230096877de03c9619af</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:14:27</sys_created_on>
-            <sys_id>6f456dd3db33a30096877de03c9619b4</sys_id>
+            <sys_created_on>2019-03-01 11:09:59</sys_created_on>
+            <sys_id>b2a44a2fdb33230096877de03c9619b1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:14:27</sys_updated_on>
+            <sys_updated_on>2019-03-01 11:09:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>clan_war_battles_played</element>
-            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef456dd3db33a30096877de03c9619b3</list_id>
+            <element>clan_war_battles_won</element>
+            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7aa44a2fdb33230096877de03c9619af</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:14:27</sys_created_on>
-            <sys_id>ef456dd3db33a30096877de03c9619b4</sys_id>
+            <sys_created_on>2019-03-01 11:09:59</sys_created_on>
+            <sys_id>36a44a2fdb33230096877de03c9619b1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:14:27</sys_updated_on>
+            <sys_updated_on>2019-03-01 11:09:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>clan_war_battles_won</element>
-            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef456dd3db33a30096877de03c9619b3</list_id>
+            <element>clan_war_final_win_rate</element>
+            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7aa44a2fdb33230096877de03c9619af</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:14:27</sys_created_on>
-            <sys_id>63456dd3db33a30096877de03c9619b5</sys_id>
+            <sys_created_on>2019-03-01 11:09:59</sys_created_on>
+            <sys_id>b6a44a2fdb33230096877de03c9619b1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:14:27</sys_updated_on>
+            <sys_updated_on>2019-03-01 11:09:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>clan_war_final_win_rate</element>
-            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef456dd3db33a30096877de03c9619b3</list_id>
+            <element>game_count</element>
+            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7aa44a2fdb33230096877de03c9619af</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:14:27</sys_created_on>
-            <sys_id>e3456dd3db33a30096877de03c9619b5</sys_id>
+            <sys_created_on>2019-03-01 11:09:59</sys_created_on>
+            <sys_id>3aa44a2fdb33230096877de03c9619b1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:14:27</sys_updated_on>
+            <sys_updated_on>2019-03-01 11:09:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sys_created_on</element>
-            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ef456dd3db33a30096877de03c9619b3</list_id>
+            <list_id display_value="x_53373_royalapi_clan_member" element="NULL" name="x_53373_royalapi_clan_member" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7aa44a2fdb33230096877de03c9619af</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:14:27</sys_created_on>
-            <sys_id>67456dd3db33a30096877de03c9619b5</sys_id>
+            <sys_created_on>2019-03-01 11:09:59</sys_created_on>
+            <sys_id>baa44a2fdb33230096877de03c9619b1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:14:27</sys_updated_on>
+            <sys_updated_on>2019-03-01 11:09:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -148,10 +148,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-02-28 14:14:27</sys_created_on>
+            <sys_created_on>2019-03-01 11:09:59</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ef456dd3db33a30096877de03c9619b3</sys_id>
+            <sys_id>7aa44a2fdb33230096877de03c9619af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_53373_royalapi_clan_member</sys_name>
             <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
@@ -159,7 +159,7 @@
             <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
             <sys_update_name>sys_ui_list_x_53373_royalapi_clan_member_null</sys_update_name>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-02-28 14:14:27</sys_updated_on>
+            <sys_updated_on>2019-03-01 11:09:59</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

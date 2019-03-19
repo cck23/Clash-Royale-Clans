@@ -4,11 +4,11 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>5eeb3de7db33230096877de03c96191a</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>e370ee5ddbd03f0096877de03c96198e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <text>Stats</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
@@ -16,13 +16,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>56eb3de7db33230096877de03c96191b</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>a770ee5ddbd03f0096877de03c96198e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -30,13 +30,13 @@
             <element>name</element>
             <position>1</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>1eeb3de7db33230096877de03c96191b</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2b70ee5ddbd03f0096877de03c96198e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -44,13 +44,13 @@
             <element>tag</element>
             <position>2</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>9eeb3de7db33230096877de03c96191b</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>ab70ee5ddbd03f0096877de03c96198e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -58,13 +58,13 @@
             <element>clan</element>
             <position>3</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>12eb3de7db33230096877de03c96191c</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2f70ee5ddbd03f0096877de03c96198e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -72,13 +72,13 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>92eb3de7db33230096877de03c96191c</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>af70ee5ddbd03f0096877de03c96198e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -86,13 +86,13 @@
             <element>sys_created_on</element>
             <position>5</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>16eb3de7db33230096877de03c96191c</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2370ee5ddbd03f0096877de03c96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -100,13 +100,13 @@
             <element>refreshed</element>
             <position>6</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>96eb3de7db33230096877de03c96191c</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>a370ee5ddbd03f0096877de03c96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -114,13 +114,13 @@
             <element>exclude</element>
             <position>7</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>1aeb3de7db33230096877de03c96191c</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2770ee5ddbd03f0096877de03c96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -128,27 +128,27 @@
             <element>.end_split</element>
             <position>8</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>9aeb3de7db33230096877de03c96191c</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>a770ee5ddbd03f0096877de03c96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>5eeb3de7db33230096877de03c96191a</element>
+            <element>e370ee5ddbd03f0096877de03c96198e</element>
             <position>9</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>1eeb3de7db33230096877de03c96191c</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2b70ee5ddbd03f0096877de03c96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
@@ -156,13 +156,13 @@
             <element>.begin_split</element>
             <position>10</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>9eeb3de7db33230096877de03c96191c</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>ab70ee5ddbd03f0096877de03c96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -170,13 +170,13 @@
             <element>pvp_win_rate</element>
             <position>11</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>12eb3de7db33230096877de03c96191d</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2f70ee5ddbd03f0096877de03c96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -184,13 +184,13 @@
             <element>team_win_rate</element>
             <position>12</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>92eb3de7db33230096877de03c96191d</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>af70ee5ddbd03f0096877de03c96198f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -198,13 +198,13 @@
             <element>game_count</element>
             <position>13</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>16eb3de7db33230096877de03c96191d</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2370ee5ddbd03f0096877de03c961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -212,41 +212,41 @@
             <element>.split</element>
             <position>14</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>96eb3de7db33230096877de03c96191d</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>a370ee5ddbd03f0096877de03c961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>clan_war_cards_collected</element>
+            <element>collection_day_win_rate</element>
             <position>15</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>1aeb3de7db33230096877de03c96191d</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2770ee5ddbd03f0096877de03c961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>collection_day_win_rate</element>
+            <element>clan_war_cards_collected</element>
             <position>16</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>9aeb3de7db33230096877de03c96191d</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>a770ee5ddbd03f0096877de03c961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -254,13 +254,13 @@
             <element>clan_war_battles_played</element>
             <position>17</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>1eeb3de7db33230096877de03c96191d</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2b70ee5ddbd03f0096877de03c961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -268,13 +268,13 @@
             <element>clan_war_battles_won</element>
             <position>18</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>9eeb3de7db33230096877de03c96191d</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>ab70ee5ddbd03f0096877de03c961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -282,13 +282,13 @@
             <element>clan_war_final_win_rate</element>
             <position>19</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>12eb3de7db33230096877de03c96191e</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2f70ee5ddbd03f0096877de03c961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -296,15 +296,29 @@
             <element>.end_split</element>
             <position>20</position>
             <sys_created_by>chikwong.cheung</sys_created_by>
-            <sys_created_on>2019-03-01 10:31:43</sys_created_on>
-            <sys_id>92eb3de7db33230096877de03c96191e</sys_id>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>af70ee5ddbd03f0096877de03c961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
             <sys_updated_by>chikwong.cheung</sys_updated_by>
-            <sys_updated_on>2019-03-01 10:31:43</sys_updated_on>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>REL.x_53373_royalapi_clan_member.REL:55f4a2bbdb4967006a54f7fdbf961904</element>
+            <position>21</position>
+            <sys_created_by>chikwong.cheung</sys_created_by>
+            <sys_created_on>2019-03-19 09:56:37</sys_created_on>
+            <sys_id>2370ee5ddbd03f0096877de03c961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_53373_royalapi_clan_member" sys_domain="global" view="Default view">2ec15788db91a7006a54f7fdbf96192c</sys_ui_section>
+            <sys_updated_by>chikwong.cheung</sys_updated_by>
+            <sys_updated_on>2019-03-19 09:56:37</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>

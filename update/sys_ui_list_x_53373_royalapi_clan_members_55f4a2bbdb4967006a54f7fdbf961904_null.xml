@@ -84,7 +84,7 @@
             <name>x_53373_royalapi_player_battles</name>
             <parent>x_53373_royalapi_clan_members</parent>
             <position/>
-            <relationship display_value="Battle results">55f4a2bbdb4967006a54f7fdbf961904</relationship>
+            <relationship display_value="Recent Battles">55f4a2bbdb4967006a54f7fdbf961904</relationship>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>chikwong.cheung</sys_created_by>

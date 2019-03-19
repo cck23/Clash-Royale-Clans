@@ -6,13 +6,24 @@
         <basic_apply_to>x_53373_royalapi_clan_member</basic_apply_to>
         <basic_query_from>x_53373_royalapi_player_battles</basic_query_from>
         <insert_callback/>
-        <name>Battle results</name>
+        <name>Recent Battles</name>
         <query_from/>
         <query_with><![CDATA[(function refineQuery(current, parent) {
 
 	// Add your code here, such as current.addQuery(field, value);
-	current.addEncodedQuery('tag=9LL2PQR0');
+	//current.addEncodedQuery('tag=9LL2PQR0');
 	// tag=2QY0PULG
+	var gr = new GlideRecord('x_53373_royalapi_player_battles');
+	gr.addEncodedQuery('tag=' + parent.tag);
+	gr.orderByDesc('date_time');
+	gr.setLimit(5);
+	gr.query();
+	var array = [];
+	while (gr.next()){
+		array.push(gr.sys_id.toString());
+	}
+	gs.info("CCK:Relationship:Battle results: array = " + array.join(","));
+	current.addEncodedQuery("sys_idIN" + array.join(","));
 
 })(current, parent);]]></query_with>
         <reference_field>name</reference_field>
@@ -22,14 +33,14 @@
         <sys_created_by>chikwong.cheung</sys_created_by>
         <sys_created_on>2018-10-16 15:17:27</sys_created_on>
         <sys_id>55f4a2bbdb4967006a54f7fdbf961904</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Battle results</sys_name>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Recent Battles</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_relationship_55f4a2bbdb4967006a54f7fdbf961904</sys_update_name>
         <sys_updated_by>chikwong.cheung</sys_updated_by>
-        <sys_updated_on>2018-11-08 15:33:16</sys_updated_on>
+        <sys_updated_on>2019-03-19 10:04:46</sys_updated_on>
     </sys_relationship>
     <sys_translated_text action="delete_multiple" query="documentkey=55f4a2bbdb4967006a54f7fdbf961904"/>
 </record_update>
