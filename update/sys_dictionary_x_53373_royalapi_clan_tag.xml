@@ -39,7 +39,7 @@
         <name>x_53373_royalapi_clan</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -55,14 +55,14 @@
         <sys_created_by>chikwong.cheung</sys_created_by>
         <sys_created_on>2018-12-17 09:22:14</sys_created_on>
         <sys_id>37b8cfe5db13230096877de03c9619a4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Tag</sys_name>
         <sys_package display_value="RoyalAPI" source="x_53373_royalapi">6cb47d63db3313006a54f7fdbf9619c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="RoyalAPI">6cb47d63db3313006a54f7fdbf9619c5</sys_scope>
         <sys_update_name>sys_dictionary_x_53373_royalapi_clan_tag</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-01-29 14:28:16</sys_updated_on>
+        <sys_updated_by>chikwong.cheung</sys_updated_by>
+        <sys_updated_on>2019-04-18 14:21:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

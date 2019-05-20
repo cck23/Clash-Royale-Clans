@@ -2,8 +2,8 @@
 <database>
     <element label="Clan War Result" max_length="40" name="x_53373_royalapi_clan_war_result" type="collection">
         <element label="Battles Played" max_length="40" name="battles_played" type="integer"/>
-        <element label="Cards Earned" max_length="40" name="cards_earned" type="integer"/>
-        <element label="Clan" max_length="32" name="clan" reference="x_53373_royalapi_clan" type="reference"/>
+        <element label="Cards Earned" max_length="40" name="cards_earned" read_only="true" type="integer"/>
+        <element label="Clan" max_length="32" name="clan" read_only="true" reference="x_53373_royalapi_clan" type="reference"/>
         <element label="Clan War Date" max_length="40" name="clan_war_date" type="glide_date_time"/>
         <element label="Created Date" max_length="40" name="created_date" read_only="true" type="integer"/>
         <element label="Name" max_length="32" name="name" reference="x_53373_royalapi_clan_member" type="reference"/>
